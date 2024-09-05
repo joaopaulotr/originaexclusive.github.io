@@ -123,7 +123,6 @@ h6 {
 
 .main-bg {
   background-color: var(--primary-color); /* Defina uma cor de fundo para visualizar melhor */
-  background-image: url("");
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
