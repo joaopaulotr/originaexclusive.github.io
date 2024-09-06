@@ -39,3 +39,16 @@ window.addEventListener("scroll", function(){
     let header = document.querySelector('#header')
     header.classList.toggle('rolagem',window.scrollY > 500)
 })
+
+function changeLogoOnScroll() {
+    const headerLogo = document.querySelector('.origina img');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 500) { 
+        headerLogo.src = 'assets/origin_logo_preta.svg'; 
+    } else {
+        headerLogo.src = 'assets/origina_logo_branca.svg'; 
+    }
+}
+
+window.addEventListener('scroll', changeLogoOnScroll);

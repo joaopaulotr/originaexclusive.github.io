@@ -30,6 +30,7 @@ header.rolagem{
 }
 
 header.rolagem a, header.rolagem .logo h1 a{
+  
   color: #000000;
 }
 
@@ -57,6 +58,7 @@ header.rolagem a, header.rolagem .logo h1 a{
   line-height: 27.5px; /* 171.875% */
   font-variant: all-small-caps;
   letter-spacing: 3.36px;
+  margin-right: 5rem;
 }
 
 .logo h1 {
@@ -87,8 +89,6 @@ header.rolagem a, header.rolagem .logo h1 a{
   align-items: center;
 }
 
-
-
 .nav-link {
   display: flex;
   cursor: pointer;
@@ -107,7 +107,6 @@ header.rolagem a, header.rolagem .logo h1 a{
   letter-spacing: 3.36px;
 }
 
-
 .mobile-menu-icon {
   display: none;
 }
@@ -122,14 +121,20 @@ header.rolagem a, header.rolagem .logo h1 a{
   }
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1380px) {
   .nav-item {
     margin: 0 35px;
   }
 }
 
+@media screen and (max-width: 1279px) {
+  .nav-item {
+    margin: 0 25px;
+  }
+}
 
-@media screen and (max-width: 730px) {
+
+@media screen and (max-width: 1218px) {
   .nav-bar {
     padding: 1.5rem 4rem;
   }
@@ -250,6 +255,7 @@ h6 {
   height: 80px;
 }
 
+/* Na quebra aumentar bg e quebrar antes */
 .grid1-content .text-content {
   display: flex;
   flex-direction: column;
