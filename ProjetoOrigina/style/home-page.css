@@ -95,7 +95,7 @@ header.rolagem a, header.rolagem .logo h1 a{
   transition: color .2s ease;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  width: 85.881px;
+  width: 13rem;
   height: 28px;
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.60);
@@ -115,6 +115,19 @@ header.rolagem a, header.rolagem .logo h1 a{
 .mobile-menu {
   display: none;
 }
+
+@media screen and (max-width: 1596px) {
+  .nav-item {
+    margin: 0 45px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .nav-item {
+    margin: 0 35px;
+  }
+}
+
 
 @media screen and (max-width: 730px) {
   .nav-bar {
@@ -231,7 +244,11 @@ h6 {
   background-attachment: fixed; 
    
 }
-
+.text-content{
+  
+  width: 200px;    
+  height: 80px;
+}
 
 .grid1-content .text-content {
   display: flex;
@@ -245,7 +262,8 @@ h6 {
 .grid-one-content article {
   display: flex;
   align-items: center;
-  gap: 1rem; 
+  gap: 1.375rem; 
+  margin: 0;
 }
 
 
@@ -260,22 +278,22 @@ h6 {
 .grid1-content{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.375rem;
+  gap: 0.5rem;
   justify-items: center;
 }
 
 .grid1-content h3 {
   color: rgba(0, 0, 0, 0.66);
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 27.5px; 
+  line-height: 20px; 
   text-transform: uppercase;
 }
 
 .grid1-content p {
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 27.5px; 
