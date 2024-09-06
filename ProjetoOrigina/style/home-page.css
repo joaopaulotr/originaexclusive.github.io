@@ -89,6 +89,10 @@ header.rolagem a, header.rolagem .logo h1 a{
   align-items: center;
 }
 
+.nav-item :hover {
+  color: rgba(255, 255, 255);
+}
+
 .nav-link {
   display: flex;
   cursor: pointer;
@@ -139,12 +143,11 @@ header.rolagem a, header.rolagem .logo h1 a{
     padding: 1.5rem 4rem;
   }
   
-
   @media (max-width: 768px) {
     body {
         background-size: contain;
     }
-}
+  }
 
   .nav-item {
     display: none;
@@ -165,6 +168,11 @@ header.rolagem a, header.rolagem .logo h1 a{
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
+    background-color: black; /* Fundo preto */
+    width: max-content; /* Ajusta a largura para cobrir as palavras */
+    padding: 1rem; /* Ajusta o espaçamento interno */
+    border-radius: 0.5rem; /* Adiciona cantos arredondados */
+    margin-left: 4rem;
   }
 
   .mobile-menu .nav-item {
