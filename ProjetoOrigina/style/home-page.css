@@ -323,7 +323,7 @@ h6 {
   line-height: 27.5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1218px) {
   .grid-one-content {
     height: 44rem;
   }
@@ -369,18 +369,17 @@ h6 {
 
 .item.large {
   grid-column: span 2; /* Ocupa duas colunas */
-  grid-row: span 2;    /* Ocupa duas linhas */
+  grid-row: span 2; /* Ocupa duas linhas */
 }
 
 .item.small {
   grid-column: span 1; /* Ocupa uma coluna */
-  grid-row: span 2;    /* Ocupa uma linha */
+  grid-row: span 2; /* Ocupa uma linha */
 }
 
 .item:hover img {
   transform: scale(1.1);
 }
-
 
 .overlay {
   position: absolute;
