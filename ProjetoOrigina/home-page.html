@@ -1,97 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Originá Exclusive</title>
-    
-    <link rel="stylesheet" href="style/home-page.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="assets/origina_icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style/home-page.css" />
+    <link rel="stylesheet" href="style/slider.css">
 
-  
-  <header id="header">
-    
-    <nav class="nav-bar">
-      <div class="logo" >
-<!--mudar a cor da logo para mais escuro (testar)-->
-        <h1 class="origina"><a href="home-page.html"><img src="assets/origina_logo_branca.svg" alt=""></a></h1>
-      </div>
-      <div class="nav-list">
-        <ul>
-          <li class="nav-item"><a href="#" class="nav-link" id="historia-list">HISTORIA</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" id="editoriais-list">EDITORIAIS</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" id="faleconosco-list">FALE CONOSCO</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" id="ogrupo-list">O GRUPO</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" id="conceito-list">CONCEITO</a></li>
+    <script src="scripts/slider.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="nav-bar">
+        <div class="logo">
+          <!--mudar a cor da logo para mais escuro (testar)-->
+          <h1 class="origina">
+            <a href="home-page.html"
+              ><img src="assets/origina_logo_branca.svg" alt=""
+            /></a>
+          </h1>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="historia-list">HISTORIA</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="editoriais-list">EDITORIAIS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="faleconosco-list"
+                >FALE CONOSCO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="ogrupo-list">O GRUPO</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="conceito-list">CONCEITO</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="assets/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul class="listahorizontal">
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="historia-mobile">HISTORIA</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="editoriais-mobile">EDITORIAIS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="faleconosco-mobile"
+              >FALE CONOSCO</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="ogrupo-mobile">O GRUPO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="conceito-mobile">CONCEITO</a>
+          </li>
         </ul>
       </div>
+    </header>
 
-      <div class="mobile-menu-icon">
-        <button onclick="menuShow()"><img class="icon" src="assets/menu_white_36dp.svg" alt=""></button>
+    <section class="banner"></section>
+
+    <script src="scripts/homescript.js"></script>
+    <div class="grid-one-content">
+      <section id="grid1" class="3elipse">
+        <div class="grid1-content">
+          <article class="article">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="104"
+              height="104"
+              viewBox="0 0 104 104"
+              fill="none"
+            >
+              <circle cx="52" cy="52" r="52" fill="#423D3D" />
+            </svg>
+            <div class="text-content">
+              <h3>Seja Originá</h3>
+              <p>Você merece exclusividade, e a ORIGINÁ chegou para isso.</p>
+            </div>
+          </article>
+
+          <article class="article">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="104"
+              height="104"
+              viewBox="0 0 104 104"
+              fill="none"
+            >
+              <circle cx="52" cy="52" r="52" fill="#423D3D" />
+            </svg>
+            <div class="text-content">
+              <h3>Seja Originá</h3>
+              <p>Você merece exclusividade, e a ORIGINÁ chegou para isso.</p>
+            </div>
+          </article>
+          <article class="article">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="104"
+              height="104"
+              viewBox="0 0 104 104"
+              fill="none"
+            >
+              <circle cx="52" cy="52" r="52" fill="#423D3D" />
+            </svg>
+            <div class="text-content">
+              <h3>Seja Originá</h3>
+              <p>Você merece exclusividade, e a ORIGINÁ chegou para isso.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="gallery">
+      <div class="item large"><img src="assets/35124 (1).png" alt="#">
+          <div class="overlay">
+              <p>Text for Image 1</p>
+          </div>
       </div>
-    </nav>
-
-    <div class="mobile-menu">
-      <ul class="listahorizontal">
-        <li class="nav-item"><a href="#" class="nav-link" id="historia-mobile">HISTORIA</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" id="editoriais-mobile">EDITORIAIS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" id="faleconosco-mobile">FALE CONOSCO</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" id="ogrupo-mobile">O GRUPO</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" id="conceito-mobile">CONCEITO</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="banner">
-    
-  </section>
-
-  <script src="scripts/homescript.js"></script>
-<div class="grid-one-content">
-  <section id="grid1" class="3elipse">
-    <div class="grid1-content">
-      <article class="article">
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
-          <circle cx="52" cy="52" r="52" fill="#423D3D"/>
-        </svg>
-        <div class="text-content">
-      <h3>Seja Originá</h3>
-      <p>Você merece exclusividade, e a ORIGINÁ chegou para isso.</p>
-    </div> 
-      </article> 
-
-      <article class="article">
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
-          <circle cx="52" cy="52" r="52" fill="#423D3D"/>
-        </svg>
-        <div class="text-content">
-      <h3>Seja Originá</h3>
-      <p>Você merece exclusividade, e a ORIGINÁ chegou para isso.</p>
-    </div>
-      </article> 
-      <article class="article">
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
-          <circle cx="52" cy="52" r="52" fill="#423D3D"/>
-        </svg>
-        <div class="text-content">
-      <h3>Seja Originá</h3>
-      <p>Você merece exclusividade, e a ORIGINÁ chegou para isso.</p>
-    </div>
-      </article> 
-    </div>
-    </section>
+      <div class="item small"><img src="assets/35100 (4).png" alt="#">
+          <div class="overlay">
+              <p>Text for Image 2</p>
+          </div>
+      </div>
+      <div class="item small"><img src="assets/35080 (3).png" alt="#">
+          <div class="overlay">
+              <p>Text for Image 3</p>
+          </div>
+      </div>
+      <div class="item large"><img src="assets/35087 (5).png" alt="#">
+          <div class="overlay">
+              <p>Text for Image 4</p>
+          </div>
+      </div>
+      <div class="item small"><img src="assets/35101 (6).png" alt="#">
+          <div class="overlay">
+              <p>Text for Image 5</p>
+          </div>
+      </div>
+      <div class="item small"><img src="assets/35079 (7).png" alt="#">
+          <div class="overlay">
+              <p>Text for Image 6</p>
+          </div>
+      </div>
   </div>
 
-  <a id="btn-whatsapp" href="" target="_blank">
-</a>
-  
-</body>
+
+    
+  <section class="slider">
+    <div class="slider-content">
+        
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+          <!-- MUDAR IMAGENS DO CARROSSEL -->
+
+        <div class="slide-box primeiro">
+            <img class="img-desktop" src="assets/slide-1.jpg" alt="slide 1">      <!-- imagem desktop -->
+            <img class="img-mobile" src="assets/slide-1-mob.jpg" alt="slide 1">   <!-- imagem mobile -->
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="assets/slide-2.jpg" alt="slide 2">
+            <img class="img-mobile" src="assets/slide-2-mob.jpg" alt="slide 2">
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="assets/slide-3.jpg" alt="slide 3">
+            <img class="img-mobile" src="assets/slide-3-mob.jpg" alt="slide 3">
+        </div>
+
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+  </section>
+
+
+    <a id="btn-whatsapp" href="" target="_blank"> </a>
+  </body>
 </html>
