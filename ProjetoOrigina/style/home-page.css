@@ -41,6 +41,11 @@ header.rolagem .mobile-menu-icon button {
   margin: 0;
 }
 
+header.rolagem .nav-item :hover {
+  color: rgb(143, 143, 143);
+}
+
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
