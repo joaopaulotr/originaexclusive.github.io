@@ -23,6 +23,7 @@ section.slider {
   position: relative;
   text-align: center;
   transition: 1s;
+  background-color: white;
 }
 
 .slide-box img {
@@ -33,7 +34,7 @@ section.slider {
 .nav-auto {
   position: absolute;
   width: 100%;
-  margin-top: 35%;
+  margin-top: 25%;
   display: flex;
   justify-content: center;
 }
@@ -41,7 +42,7 @@ section.slider {
 .nav-manual .manual-btn,
 .nav-auto div {
   border: 1px solid #565353;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.2s;

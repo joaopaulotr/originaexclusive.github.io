@@ -1,0 +1,17 @@
+.container {
+  background-image: url(/ProjetoOrigina/assets/originaimgatras.png);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: auto;
+  margin: 0 auto;
+  padding: var(--gap);
+  
+}

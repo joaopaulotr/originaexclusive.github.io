@@ -50,4 +50,28 @@ function changeLogoOnScroll() {
   }
 }
 
+function changeMenuOnScroll() {
+  const headerLogo = document.querySelector(".iconm");
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 525) {
+    headerLogo.src = "assets/menu_black_36dp.svg";
+  } else {
+    headerLogo.src ="assets/menu_white_36dp.svg";
+  }
+}
+
+function changeCloseOnScroll() {
+  const headerLogo = document.querySelector(".icon");
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 525) {
+    headerLogo.src = "assets/close_black_36dp.svg";
+  } else {
+    headerLogo.src ="assets/close_white_36dp.svg";
+  }
+}
+
 window.addEventListener("scroll", changeLogoOnScroll);
+window.addEventListener("scroll", changeMenuOnScroll);
+window.addEventListener("scroll", changeCloseOnScroll);
