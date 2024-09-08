@@ -154,6 +154,7 @@ header.rolagem .nav-item :hover {
     body {
       background-size: contain;
     }
+    
   }
 
   .nav-item {
@@ -274,7 +275,7 @@ h6 {
   height: 80px;
 }
 
-/* Na quebra aumentar bg e quebrar antes */
+
 .grid1-content .text-content {
   display: flex;
   flex-direction: column;
@@ -405,3 +406,26 @@ h6 {
   margin: 0;
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto; 
+    gap: 0;
+  }
+
+  .item.large,
+  .item.small {
+    grid-column: span 1; 
+    grid-row: span 1; 
+    
+  }
+
+.item{
+  aspect-ratio: 1 / 1;
+}
+
+.item img {
+  width: 100%; 
+  height: 100%; 
+}}
