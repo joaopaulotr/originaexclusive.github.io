@@ -535,16 +535,33 @@ h6 {
 }
 
 footer {
-  width: 100%;
-  background-color: white;
+  background-image: url(/ProjetoOrigina/assets/Group\ 54.png);
+  width: auto;
+  height: auto;
+
+
+}
+
+.footer-principal {
+  padding-top: 3px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+  
 }
 
 .footer-link {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   text-decoration: none;
 }
 
 #footer_content {
-  background-color: var(--color-neutral-10);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 3rem 3.5rem;
@@ -566,7 +583,7 @@ footer {
   justify-content: center;
   height: 2.5rem;
   width: 2.5rem;
-  color: var(--color-neutral-40);
+  color: white;
   border-radius: 50%;
   transition: all 0.4s;
 }
@@ -599,12 +616,12 @@ footer {
 }
 
 .footer-list .footer-link {
-  color: var(--color-neutral-30);
+  color: white;
   transition: all 0.4s;
 }
 
 .footer-list .footer-link:hover {
-  color: #7f37c9;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 #footer_subscribe {
@@ -614,13 +631,13 @@ footer {
 }
 
 #footer_subscribe p {
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 #input_group {
   display: flex;
   align-items: center;
-  background-color: var(--color-neutral-0);
+  background-color: white;
   border-radius: 4px;
 }
 
@@ -631,9 +648,9 @@ footer {
 }
 
 #input_group button {
-  background-color: #7f37c9;
+  background-color: rgba(0, 0, 0, 0.7);
   border: none;
-  color: var(--color-neutral-40);
+  color: white;
   padding: 0px 1.25rem;
   font-size: 1.125rem;
   height: 100%;
@@ -647,9 +664,10 @@ footer {
 }
 
 #footer_copyright {
+  color: white;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: transparent;
   font-size: 1.2rem;
   padding: 1.5rem;
   font-weight: 200;
