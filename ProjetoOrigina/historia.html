@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>História</title>
+
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/origina_icon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/homescript.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="nav-bar">
+        <div class="logo">
+          <!--mudar a cor da logo para mais escuro (testar)-->
+          <h1 class="origina">
+            <a href="home-page.html"
+              ><img src="assets/origina_logo_branca.svg" alt=""
+            /></a>
+          </h1>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="historia.html" class="nav-link" id="historia-list"
+                >HISTORIA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="editoriais.html" class="nav-link" id="editoriais-list"
+                >EDITORIAIS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="fale-conosco.html" class="nav-link" id="faleconosco-list"
+                >FALE CONOSCO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="ogrupo.html" class="nav-link" id="ogrupo-list"
+                >O GRUPO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="conceito.html" class="nav-link" id="conceito-list"
+                >CONCEITO</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="iconm" src="assets/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul class="listahorizontal">
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="historia-mobile">HISTORIA</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="editoriais-mobile">EDITORIAIS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="faleconosco-mobile"
+              >FALE CONOSCO</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="ogrupo-mobile">O GRUPO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="conceito-mobile">CONCEITO</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="banner"></section>
+
+    <footer>
+      <div id="footer_content">
+        <div id="footer_contacts">
+          <a href="#">
+            <img
+              src="assets/logomarca_logotipo_origina_1c.png"
+              alt="#"
+              class="logo-footer"
+          /></a>
+
+          <div id="footer_social_media">
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <h3 class="footer-principal">Blog</h3>
+          </li>
+          <li>
+            <a href="#" class="footer-link">tech</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">adventures</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">music</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <h3 class="footer-principal">Products</h3>
+          </li>
+          <li>
+            <a href="#" class="footer-link">app</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">desktop</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">cloud</a>
+          </li>
+        </ul>
+
+        <div id="footer_subscribe">
+          <h3 class="footer-principal">Subscribe</h3>
+
+          <p class="footer-link">
+            enter your e-mail to get notified about our news solutions
+          </p>
+
+          <div id="input_group">
+            <input type="email" id="email" />
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer_copyright">
+        Copyright © 2024 - MondaBelle - CNPJ: 43.573.412/0001-23
+      </div>
+    </footer>
+  </body>
+</html>

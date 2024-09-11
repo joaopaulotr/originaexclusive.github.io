@@ -459,7 +459,6 @@ h6 {
 .fundadoras-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
   align-items: center;
   justify-items: center;
   margin-top: 40px;
@@ -472,6 +471,12 @@ h6 {
   }
   .fundadora {
     margin: 0 auto;
+  }
+  .fundadora-direita {
+    text-align: center;
+  }
+  .fundadora-esquerda {
+    text-align: center;
   }
 }
 
@@ -546,7 +551,7 @@ footer {
   padding-top: 3px;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   font-variant: all-small-caps;
   letter-spacing: 3.36px;
