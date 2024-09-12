@@ -9,30 +9,6 @@ function menuShow() {
   }
 }
 
-const historia = document.querySelector("#historia-list");
-historia.addEventListener("click", () => {
-  console.log('Redireciona para "Historia"!');
-});
-
-const editoriais = document.querySelector("#editoriais-list");
-editoriais.addEventListener("click", () => {
-  console.log('Redireciona para "Editoriais"!');
-});
-
-const faleConosco = document.querySelector("#faleconosco-list");
-faleConosco.addEventListener("click", () => {
-  console.log('Redireciona para "Fale Conosco"!');
-});
-
-const oGrupo = document.querySelector("#ogrupo-list");
-oGrupo.addEventListener("click", () => {
-  console.log('Redireciona para "O Grupo"!');
-});
-
-const conceito = document.querySelector("#conceito-list");
-conceito.addEventListener("click", () => {
-  console.log('Redireciona para "Conceito"!');
-});
 
 window.addEventListener("scroll", function () {
   let header = document.querySelector("#header");
@@ -81,6 +57,8 @@ window.addEventListener('scroll', function() {
   var footer = document.querySelector('footer');
   var floatButton = document.querySelector('#btn-whatsapp');
 
+
+
   // Obtém a posição do footer em relação à viewport
   var footerRect = footer.getBoundingClientRect();
   var windowHeight = window.innerHeight;
@@ -91,6 +69,7 @@ window.addEventListener('scroll', function() {
     floatButton.style.bottom = (windowHeight - footerRect.top + 100) + 'px';
   } else {
     // Reseta o botão para a posição original quando o footer não está visível
-    floatButton.style.bottom = '100px';
+    floatButton.style.bottom = '40px';
   }
+
 });
