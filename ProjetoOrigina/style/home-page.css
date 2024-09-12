@@ -334,11 +334,20 @@ h6 {
   z-index: 900;
   outline: 0px;
   display: flex;
-  width: 70px;
-  height: 70px;
-  bottom: 50px;
+  width: 100px;
+  height: 100px;
+  bottom: 100px;
   align-items: center;
   justify-content: center;
+}
+
+#btn-whatsapp img {
+  width: 100px;
+  height: 100px;
+}
+
+#btn-whatsapp:hover {
+  transform: scale(1.1);
 }
 
 .gallery {

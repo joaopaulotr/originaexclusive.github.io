@@ -75,3 +75,22 @@ function changeCloseOnScroll() {
 window.addEventListener("scroll", changeLogoOnScroll);
 window.addEventListener("scroll", changeMenuOnScroll);
 window.addEventListener("scroll", changeCloseOnScroll);
+
+
+window.addEventListener('scroll', function() {
+  var footer = document.querySelector('footer');
+  var floatButton = document.querySelector('#btn-whatsapp');
+
+  // Obtém a posição do footer em relação à viewport
+  var footerRect = footer.getBoundingClientRect();
+  var windowHeight = window.innerHeight;
+
+  // Se o footer está visível na tela, reposiciona o botão
+  if (footerRect.top <= windowHeight) {
+    // Ajusta a posição do botão para não sobrepor o footer
+    floatButton.style.bottom = (windowHeight - footerRect.top + 100) + 'px';
+  } else {
+    // Reseta o botão para a posição original quando o footer não está visível
+    floatButton.style.bottom = '100px';
+  }
+});
