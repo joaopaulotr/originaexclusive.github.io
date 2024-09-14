@@ -1,12 +1,14 @@
 .container {
   background-image: url(/ProjetoOrigina/assets/background.png);
   max-width: auto;
-  max-height: 1200px;
+  max-height: auto;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
-/* Estilização Geral do Formulário */
 form {
   background-color: transparent;
   padding: 30px;
@@ -16,7 +18,6 @@ form {
   color: black;
   font-size: 70px;
   font-weight: 900;
-
   text-align: center;
 }
 
@@ -32,9 +33,10 @@ form {
 /* Grupo de Inputs */
 .input-group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* Garante duas colunas de tamanho igual */
+  gap: 10px; /* Reduz o espaçamento entre as colunas */
   margin-top: 20px;
+  width: 100%; 
 }
 
 .input-box {
@@ -43,51 +45,69 @@ form {
 }
 
 .input-box label {
-  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px; /* Aumenta ligeiramente o tamanho da fonte do label */
   color: #333;
   margin-bottom: 5px;
+  font-weight: 400;
 }
 
 .input-box input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  color: #333;
+  padding: 10px; /* Aumenta o padding para campos maiores */
+  background: rgba(50, 50, 50, 0.70);
+  border: 1px solid #FFF;
+  color: rgba(255, 255, 255, 0.80); /* Ajusta a cor do texto nos campos */
+  border: none;
+  border-radius: 3px;
+  font-size: 18px; /* Aumenta o tamanho da fonte */
+  width: 100%; /* Faz os inputs ocuparem a largura total */
+}
+
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.50); /* Ajusta a cor do placeholder */
 }
 
 .input-box input:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: 2px solid #4a5568;
+  box-shadow: 0 0 5px rgba(18, 18, 18, 0.3);
 }
 
 /* Botão de Enviar */
 .continue-button {
+  display: flex;
+  justify-content: center; /* Centraliza o botão */
   margin-bottom: 30px;
   margin-top: 30px;
-  text-align: center;
+}
+
+.continue-button a {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px; /* Aumenta ligeiramente o tamanho da fonte do label */
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 400;
+  text-decoration: none; 
+  color: rgba(255, 255, 255, 0.80);
 }
 
 .continue-button button {
-  background-color: #007bff;
+  background-color:rgba(50, 50, 50, 0.70);
   color: white;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-weight: bold;
   border: none;
-  border-radius: 4px;
+  border-radius: 3px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; 
 }
 
 .continue-button button:hover {
-  background-color: #0056b3;
+  background-color:rgba(50, 50, 50, 0.949);
 }
 
-/* Ajustes para Telas Menores */
 @media (max-width: 768px) {
   .input-group {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Uma coluna para telas menores */
   }
 }
-
-
