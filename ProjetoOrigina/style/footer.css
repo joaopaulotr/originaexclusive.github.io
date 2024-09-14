@@ -6,11 +6,13 @@
   
   
 .logo-footer {
+    
     width: 20rem;
     height: auto;
   }
   
   footer {
+    padding-left: 55px;
     background-image: url(/ProjetoOrigina/assets/Group\ 54.png);
     width: auto;
     height: auto;

@@ -11,7 +11,8 @@
   }
   
   header {
-
+    background-color: #565353;
+    z-index: 10;
     transition: 0.3s;
     width: 100%;
     padding: 30px 4%;
@@ -20,7 +21,7 @@
     left: 0;
   }
   header.rolagem {
-    background-color: white;
+    background-color: #565353;
     padding: 8px 3%;
   }
   
@@ -194,7 +195,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
-    background-color: #f0f0f0; /* Adicione uma cor de fundo para melhor visualização */
+    background-color: #565353; /* Adicione uma cor de fundo para melhor visualização */
   }
   
   h1,
@@ -250,7 +251,19 @@
     padding: var(--gap);
   }
   
-
+  .banner {
+    background-image: url("/ProjetoOrigina/assets/background.png");
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .text-content {
     width: 200px;
     height: 80px;
