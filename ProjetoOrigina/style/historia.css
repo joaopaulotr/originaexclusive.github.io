@@ -23,7 +23,7 @@
   }
 
   .escrita{
-    padding-top: 4.56rem;
+    padding-top: 6rem;
     padding-left: 100px;
   }
 
@@ -46,6 +46,7 @@
   }
 
   .pagina-incial {
+    padding-top: 1rem;
     color: rgba(0, 0, 0, 0.50);
     font-family: "Roboto", sans-serif;
     font-size: 16px;
