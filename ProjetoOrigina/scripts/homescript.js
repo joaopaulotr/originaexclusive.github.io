@@ -74,7 +74,7 @@ window.addEventListener('scroll', function() {
 
 });
 
-document.querySelectorAll('.scroll-link').forEach(anchor => {
+document.querySelectorAll('#cadastro').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const targetSection = document.querySelector(this.getAttribute('href'));

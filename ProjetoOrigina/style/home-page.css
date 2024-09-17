@@ -667,21 +667,7 @@ footer {
   width: 100%;
 }
 
-#input_group button {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: none;
-  color: white;
-  padding: 0px 1.25rem;
-  font-size: 1.125rem;
-  height: 100%;
-  border-radius: 0px 4px 4px 0px;
-  cursor: pointer;
-  transition: all 0.4s;
-}
 
-#input_group button:hover {
-  opacity: 0.8;
-}
 
 #footer_copyright {
   color: white;
