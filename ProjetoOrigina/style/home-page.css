@@ -548,7 +548,15 @@ h6 {
   align-items: center;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 .logo-footer {
+  
   width: 20rem;
   height: auto;
 }
@@ -558,8 +566,6 @@ footer {
   background-image: url(/ProjetoOrigina/assets/Group\ 54.png);
   width: auto;
   height: auto;
-
-
 }
 
 .footer-principal {
@@ -667,7 +673,21 @@ footer {
   width: 100%;
 }
 
+#input_group button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
 
+#input_group button:hover {
+  opacity: 0.8;
+}
 
 #footer_copyright {
   color: white;

@@ -10,7 +10,6 @@
 }
 
 form {
-  max-height: 800px;
   background-color: transparent;
   padding: 30px;
 }
@@ -107,6 +106,7 @@ form {
 }
 
 @media (max-width: 768px) {
+
   .input-group {
     grid-template-columns: 1fr; /* Uma coluna para telas menores */
   }
