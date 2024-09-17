@@ -76,8 +76,21 @@ body {
     position: relative; /* Altera o position para relative */
     right: 0; /* Remove a posição à direita */
     top: 0; /* Remove a posição do topo */
-    margin-top: 20px; /* Adiciona margem em cima para espaçar do subtítulo */
+    padding-left: 5px;
+    margin-top: 15px; /* Adiciona margem em cima para espaçar do subtítulo */
   }
+
+  .escrita {
+    padding-left: 60px;
+}
+
+.box-cinza{
+   height: 25rem; 
+}
+
+.background-article .texto-article {
+  padding-left: 60px;
+}
 }
 
 .texto-article {
