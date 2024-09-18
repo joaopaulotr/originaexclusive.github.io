@@ -92,3 +92,25 @@
     padding-left: 60px;
   }
   }
+
+  .fundo-galeria{
+    background-color: white;
+    height: 100vh;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
