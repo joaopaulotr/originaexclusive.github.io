@@ -79,7 +79,8 @@
       margin-top: 15px;
       padding-left: 5px; 
     }
-
+     
+  
     .escrita {
         padding-left: 55px;
     }
@@ -171,7 +172,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 27.5px; /* 114.583% */
+    line-height: 27.5px;
     font-variant: all-small-caps;
     letter-spacing: 5.04px;
     margin-top: 9rem;
@@ -183,7 +184,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27.5px; /* 171.875% */
+    line-height: 27.5px;
     font-variant: all-small-caps;
     letter-spacing: 3.36px;
     text-align: center;
@@ -212,6 +213,18 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27.5px; /* 137.5% */
+    line-height: 27.5px;
     margin-top: 3rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .telefone {
+      text-align: left;
+    }
+  
+    .tel-label, .tel-number {
+      text-align: center;
+      display: block; /* Força cada parte do telefone em linhas diferentes */
+    }
   }

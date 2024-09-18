@@ -9,6 +9,92 @@ function menuShow() {
   }
 }
 
+//Completando informações dos campos automaticamente:
+let tel = document.querySelector('#tel');
+tel.addEventListener('keypress', () => {
+  let inputLength = tel.value.length;
+  let regex = /^[+][5][5]/;
+
+  if (inputLength == 0) {
+    tel.value = '+' + tel.value;
+  }
+
+  if (tel.value == '+55') {
+    tel.value += ' (';
+  }
+
+  let espaco = tel.value.indexOf(' ');
+
+  if (espaco > 0) {
+    if (inputLength == espaco + 1 && regex.test(tel.value)) {
+      tel.value += '(';
+    }
+
+    if (inputLength == espaco + 4 && regex.test(tel.value)) {
+      tel.value += ') ';
+    }
+
+    if (inputLength == espaco + 10 && regex.test(tel.value)) {
+      tel.value += '-';
+    }
+
+    if (inputLength == espaco + 15 && regex.test(tel.value)) {
+      var str = tel.value.split('');
+      var i   = tel.value.indexOf('-');
+      var j   = tel.value.indexOf('-')+1;
+
+      var aux   = str[i];    
+      str[i]    = str[j];
+      str[j]    = aux;    
+      tel.value = str.join('');
+    }
+
+  }
+    
+})
+
+
+let cpf = document.querySelector('#CPF');
+cpf.addEventListener('keypress', () => {
+  let inputLength = cpf.value.length;
+
+  if (inputLength == 3 || inputLength == 7) {
+    cpf.value += '.';
+  }
+
+  if (inputLength == 11) {
+    cpf.value += '-';
+  }
+
+})
+
+let cep = document.querySelector('#cep');
+cep.addEventListener('keypress', () => {
+  let inputLength = cep.value.length;
+
+  if (inputLength == 5) {
+    cep.value += '-';
+  }
+
+})
+
+let cnpj = document.querySelector('#CNPJ');
+cnpj.addEventListener('keypress', () => {
+  let inputLength = cnpj.value.length;
+
+  if (inputLength == 2 || inputLength == 6) {
+    cnpj.value += '.';
+  }
+
+  if (inputLength == 10) {
+    cnpj.value += '/';
+  }
+
+  if (inputLength == 15) {
+    cnpj.value += '-';
+  }
+
+})
 
 window.addEventListener("scroll", function () {
   let header = document.querySelector("#header");

@@ -95,22 +95,65 @@
 
   .fundo-galeria{
     background-color: white;
-    height: 100vh;
+    height: auto;
   }
 
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-  }
-  
-  .gallery-item {
-    overflow: hidden;
-  }
-  
-  .gallery-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-  
+.gallery1{
+  padding-top: 7.5rem;
+  padding-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.gallery2{
+  padding-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.gallery-item{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.botao_editoriais{
+  padding-left: 40px;
+  background-color: transparent;
+}
+
+.botao-ver-todos {
+  margin-left: 100px;
+  display: block;
+  text-align: center;
+  background-color: #ebebeb;
+  width: 640px;
+  height: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: all-small-caps;
+  letter-spacing: 0.315rem;
+  text-decoration: none;
+  line-height: 3rem;
+  border: 1px ridge rgba(0, 0, 0, 0.30);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.botao-ver-todos:hover {
+  background-color: #dcdcdc; 
+  border-color: #666666; 
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
