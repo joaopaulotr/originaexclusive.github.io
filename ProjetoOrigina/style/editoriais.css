@@ -7,6 +7,15 @@
   .background-article {
     height: 70vh;
   }
+  h3{
+    all:unset
+  }
+  h4{
+    all:unset
+  }
+  p{
+    all: unset;
+  }
   
   body {
     font-family: "Roboto", sans-serif;
@@ -157,3 +166,68 @@
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
+.escrita-lateral .nome-colecao {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27.5px;
+  font-variant: all-small-caps;
+  letter-spacing: 5.04px;
+}
+
+.escrita-lateral .texto-colecao {
+  color: #000;
+font-family: 'Roboto', sans-serif;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.71875rem;
+}
+
+.escrita-lateral .data {
+color: rgba(0, 0, 0, 0.70);
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+font-style: bold;
+font-weight: 700;
+line-height: 1.71875rem; 
+font-variant: all-small-caps;
+letter-spacing: 0.21rem;
+}
+
+.escrita-lateral .num-colection{
+color: rgba(0, 0, 0, 0.70);
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+font-style: bold;
+font-weight: 700;
+line-height: 1.71875rem;
+font-variant: all-small-caps;
+letter-spacing: 0.21rem;
+}
+
+.num-colection .texto-sec{
+  color: rgba(0, 0, 0, 0.70);
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.71875rem;
+font-variant: all-small-caps;
+letter-spacing: 0.21rem;
+}
+
+.data .texto-sec{
+  color: rgba(0, 0, 0, 0.70);
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.71875rem;
+font-variant: all-small-caps;
+letter-spacing: 0.21rem;
+}
+

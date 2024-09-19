@@ -171,22 +171,136 @@ body {
   letter-spacing: 5.04px;
   margin-left: 10.5rem;
   margin-top: 7rem;
+  display: block;
 }
 
 .img_pst {
   width: 1123px;
   height: 480px;
+  display: flex;
   flex-shrink: 0;
   background: #d9d9d9;
   margin-top: -65rem;
   margin-left: 10.5rem;
+  margin-bottom: 5rem;
 }
 
-.line {
-  width: 4.991px;
-  height: 1117.525px;
-  transform: rotate(89.741deg);
-  flex-shrink: 0;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.4);
+.linha-separadora {
+  border: none;
+  border-top: 2px solid rgba(0, 0, 0, 0.4); /* Altere a cor conforme necessário */
+  width: 80%; /* Ajusta a largura da linha */
+  margin: 20px auto; /* Centraliza a linha e define margens */
+}
+
+.fundadoras {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.fundadora {
+  max-width: 250px;
+  width: 373px;
+  height: auto;
+  margin: 0; /* Remove qualquer margem para aproximar o conteúdo */
+}
+
+.fundadora h3, .fundadora p {
+  margin: 0; /* Remove margens do título e parágrafo */
+  padding: 0; /* Remove padding adicional se houver */
+}
+
+.fundadora-direita {
+  text-align: left;
+}
+.fundadora-esquerda {
+  text-align: right;
+}
+
+.fundadoras-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-top: 40px;
+  gap: 10px; /* Ajusta o espaço entre os itens */
+}
+
+.imagem {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove margem ao redor das imagens */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .fundadoras-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fundadora {
+    margin: 0 auto;
+  }
+  .fundadora-direita {
+    text-align: center;
+  }
+  .fundadora-esquerda {
+    text-align: center;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .fundadoras-container {
+    grid-template-columns: 1fr;
+  }
+  .fundadora h3,
+  .fundadora p {
+    text-align: center;
+    margin: 0;
+  }
+  .fundadora {
+    width: 100%;
+    max-width: 100%;
+  }
+  .imagem {
+    margin: 20px 0;
+  }
+}
+
+.fundadora {
+  max-width: 250px;
+  width: 373px;
+  height: auto;
+}
+
+.fundadora h3 {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.5px;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+}
+
+.fundadora p {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27.5px;
+  letter-spacing: 0.16px;
+  text-transform: lowercase;
+}
+
+.imagem {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
