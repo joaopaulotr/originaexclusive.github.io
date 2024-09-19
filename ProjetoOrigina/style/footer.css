@@ -16,6 +16,7 @@
     background-image: url(/ProjetoOrigina/assets/Group\ 54.png);
     width: auto;
     height: auto;
+    object-fit: cover;
   }
   
   .footer-principal {

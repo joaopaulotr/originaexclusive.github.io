@@ -102,6 +102,10 @@
   }
   }
 
+.conteudo{
+  padding-bottom:20px;
+}
+
   .fundo-galeria{
     background-color: white;
     height: auto;
@@ -112,26 +116,26 @@
   padding-left: 100px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  padding-bottom: 40px;
+  gap: 15px;
+  padding-bottom: 15px;
 }
 .gallery2{
   padding-left: 100px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  padding-bottom: 40px;
+  gap: 15px;
+  padding-bottom: 15px;
 }
 .gallery-item{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .gallery-item img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -145,7 +149,7 @@
   display: block;
   text-align: center;
   background-color: #ebebeb;
-  width: 640px;
+  width: 516px;
   height: 3rem;
   color: rgba(0, 0, 0, 0.7);
   font-family: 'Roboto', sans-serif;
@@ -166,68 +170,92 @@
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+.escrita-lateral{
+  padding-left: 6rem;
+}
+.linha{
+  width: 70px;
+    border: none;
+    height: 1px;        
+   background-color: rgba(0, 0, 0, 0.40);
+}
+
+.linha2{
+  margin-left: 100px;
+  width: 125rem;
+    border: none;
+    height: 1px;        
+   background-color: rgba(0, 0, 0, 0.40);
+}
 
 .escrita-lateral .nome-colecao {
   color: rgba(0, 0, 0, 0.7);
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 27.5px;
+  line-height: 1rem; /* Aumentado o line-height */
   font-variant: all-small-caps;
   letter-spacing: 5.04px;
+  padding-bottom: 1rem;
 }
 
 .escrita-lateral .texto-colecao {
+  padding-top: 1rem;
   color: #000;
-font-family: 'Roboto', sans-serif;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: 1.71875rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem; /* Aumentado o line-height */
+  padding-bottom: 1.8rem;
+  max-width: 690px;
 }
 
 .escrita-lateral .data {
-color: rgba(0, 0, 0, 0.70);
-font-family: 'Roboto', sans-serif;
-font-size: 1rem;
-font-style: bold;
-font-weight: 700;
-line-height: 1.71875rem; 
-font-variant: all-small-caps;
-letter-spacing: 0.21rem;
-}
-
-.escrita-lateral .num-colection{
-color: rgba(0, 0, 0, 0.70);
-font-family: 'Roboto', sans-serif;
-font-size: 1rem;
-font-style: bold;
-font-weight: 700;
-line-height: 1.71875rem;
-font-variant: all-small-caps;
-letter-spacing: 0.21rem;
-}
-
-.num-colection .texto-sec{
   color: rgba(0, 0, 0, 0.70);
-font-family: 'Roboto', sans-serif;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: 1.71875rem;
-font-variant: all-small-caps;
-letter-spacing: 0.21rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem; /* Aumentado o line-height */
+  font-variant: all-small-caps;
+  letter-spacing: 0.21rem;
+  padding-top: 1.6rem;
 }
 
-.data .texto-sec{
+.escrita-lateral .num-colection {
   color: rgba(0, 0, 0, 0.70);
-font-family: 'Roboto', sans-serif;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: 1.71875rem;
-font-variant: all-small-caps;
-letter-spacing: 0.21rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2rem; /* Aumentado o line-height */
+  font-variant: all-small-caps;
+  letter-spacing: 0.21rem;
 }
 
+.num-colection .texto-sec {
+  color: rgba(0, 0, 0, 0.70);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem; /* Aumentado o line-height */
+  font-variant: all-small-caps;
+  letter-spacing: 0.21rem;
+}
+
+.data .texto-sec {
+  color: rgba(0, 0, 0, 0.70);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem; /* Aumentado o line-height */
+  font-variant: all-small-caps;
+  letter-spacing: 0.21rem;
+}
+
+.conteudo-2{
+  height: auto;
+  padding-top:20px;
+}

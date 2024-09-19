@@ -436,11 +436,21 @@ h6 {
   }
 }
 
+#fundadora-img1 {
+  margin-right: 3.5rem;
+}
+
+#fundadora-img2 {
+  margin-left: 3.5rem;
+}
+
+
 .fundadoras {
   text-align: center;
   padding: 50px 0;
   background-color: #f5f5f5;
 }
+
 
 .fundadora-direita {
   text-align: left;
@@ -471,13 +481,14 @@ h6 {
 }
 
 .fundadoras-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.33rem;
 }
-
 /* Responsividade para tablets */
 @media (max-width: 1024px) {
   .fundadoras-container {
@@ -566,6 +577,7 @@ footer {
   background-image: url(/ProjetoOrigina/assets/Group\ 54.png);
   width: auto;
   height: auto;
+  object-fit: cover;
 }
 
 .footer-principal {
