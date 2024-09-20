@@ -182,7 +182,8 @@
 
 .linha2{
   margin-left: 100px;
-  width: 125rem;
+  width: 90%;
+  max-width: 128rem;
     border: none;
     height: 1px;        
    background-color: rgba(0, 0, 0, 0.40);
@@ -261,6 +262,10 @@
 }
 
 
-@media (max-width: 790px) {
+@media (max-width: 1400px) {
+    .escrita-lateral{
+      padding-left: 0rem;
+    }
+
   
 }
