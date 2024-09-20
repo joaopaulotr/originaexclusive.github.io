@@ -80,7 +80,7 @@
   }
   
   /* Aqui está a media query para telas menores */
-  @media (max-width: 790px) {
+  @media (max-width: 800px) {
     .hrefs-pg {
       position: relative; /* Altera o position para relative */
       right: 0; /* Remove a posição à direita */
@@ -88,7 +88,7 @@
       padding-left: 5px;
       margin-top: 15px; /* Adiciona margem em cima para espaçar do subtítulo */
     }
-  
+ 
     .escrita {
       padding-left: 60px;
   }
@@ -172,6 +172,7 @@
 }
 .escrita-lateral{
   padding-left: 6rem;
+  padding-right: 3rem;
 }
 .linha{
   width: 70px;
@@ -182,7 +183,7 @@
 
 .linha2{
   margin-left: 100px;
-  width: 90%;
+  width: 80%;
   max-width: 128rem;
     border: none;
     height: 1px;        
@@ -212,6 +213,7 @@
   padding-bottom: 1.8rem;
   max-width: 690px;
 }
+
 
 .escrita-lateral .data {
   color: rgba(0, 0, 0, 0.70);
@@ -262,10 +264,35 @@
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: 1390px) {
     .escrita-lateral{
       padding-left: 0rem;
     }
+    .gallery2{
+      display: none;
+    }
+}
 
-  
+@media (max-width: 800px) {
+  .gallery1{
+    padding-left: 60px;
+  }
+  .gallery2{
+    padding-left: 60px;
+  }
+  .botao-ver-todos{
+    margin-left: 60px;
+  }
+  .linha2{
+    margin-left: 60px;
+  }
+}
+
+
+
+@media (max-width: 615px) {
+  .botao-ver-todos{
+      width: 250px;
+  }
+ 
 }
