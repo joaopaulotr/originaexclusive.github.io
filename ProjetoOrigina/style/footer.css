@@ -166,3 +166,16 @@
     }
   }
   
+  @media (max-width: 760px) {
+    footer{
+       padding-left:30px ;
+    }
+   
+  }
+
+  @media (max-width: 400px) {
+    footer{
+       padding-left:35px ;
+    }
+   
+  }

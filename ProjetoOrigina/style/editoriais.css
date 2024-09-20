@@ -168,7 +168,7 @@
   background-color: #dcdcdc; 
   border-color: #666666; 
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
 }
 .escrita-lateral{
   padding-left: 6rem;
@@ -264,7 +264,7 @@
 }
 
 
-@media (max-width: 1390px) {
+@media (max-width: 1440px) {
     .escrita-lateral{
       padding-left: 0rem;
     }

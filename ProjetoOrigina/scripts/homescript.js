@@ -152,7 +152,7 @@ window.addEventListener('scroll', function() {
   // Se o footer está visível na tela, reposiciona o botão
   if (footerRect.top <= windowHeight) {
     // Ajusta a posição do botão para não sobrepor o footer
-    floatButton.style.bottom = (windowHeight - footerRect.top + 100) + 'px';
+    floatButton.style.bottom = (windowHeight - footerRect.top + 60) + 'px';
   } else {
     // Reseta o botão para a posição original quando o footer não está visível
     floatButton.style.bottom = '40px';

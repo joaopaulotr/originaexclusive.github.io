@@ -5,7 +5,7 @@
   }
   
   .background-article {
-    height: 70vh;
+    height: 40vh;
   }
   
   body {
@@ -215,6 +215,7 @@
     font-weight: 400;
     line-height: 27.5px;
     margin-top: 3rem;
+    margin-bottom: 90px;
   }
   
   /* Responsividade */

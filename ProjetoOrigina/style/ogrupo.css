@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-.background-article {
-  height: 70vh;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -160,30 +156,28 @@ body {
   color: black;
 }
 
-#gp_mb {
-  color: rgba(0, 0, 0, 0.7);
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 27.5px; /* 114.583% */
-  font-variant: all-small-caps;
-  letter-spacing: 5.04px;
-  margin-left: 10.5rem;
-  margin-top: 7rem;
-  display: block;
+.background-article {
+  height: auto;
+  position: relative;
 }
 
-.img_pst {
-  width: 1123px;
-  height: 480px;
-  display: flex;
-  flex-shrink: 0;
-  background: #d9d9d9;
-  margin-top: -65rem;
-  margin-left: 10.5rem;
-  margin-bottom: 5rem;
+#gp_mb { 
+  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase; /* Força o texto a ser todo maiúsculo */
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem; /* Reduz a margem inferior para aproximar a imagem */
+  text-align: left;
+  margin-left: 0;
 }
+
+
+
+
+
 
 .linha-separadora {
   border: none;
@@ -192,22 +186,22 @@ body {
   margin: 20px auto; /* Centraliza a linha e define margens */
 }
 
+#fundadora-img1 {
+  margin-right: 3.5rem;
+}
+
+#fundadora-img2 {
+  margin-left: 3.5rem;
+}
+
+
 .fundadoras {
   text-align: center;
-  padding: 50px 0;
+  padding-bottom: 50px;
+  padding-top: 20px;
+
 }
 
-.fundadora {
-  max-width: 250px;
-  width: 373px;
-  height: auto;
-  margin: 0; /* Remove qualquer margem para aproximar o conteúdo */
-}
-
-.fundadora h3, .fundadora p {
-  margin: 0; /* Remove margens do título e parágrafo */
-  padding: 0; /* Remove padding adicional se houver */
-}
 
 .fundadora-direita {
   text-align: left;
@@ -216,59 +210,37 @@ body {
   text-align: right;
 }
 
+.titulo h2 {
+  color: #000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.titulo p {
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.5px;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+}
+
 .fundadoras-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  margin-top: 40px;
-  gap: 10px; /* Ajusta o espaço entre os itens */
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.33rem;
 }
 
-.imagem {
-  width: 150px;
-  height: 150px;
-  background-color: #ddd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0; /* Remove margem ao redor das imagens */
-}
-
-/* Responsividade para tablets */
-@media (max-width: 1024px) {
-  .fundadoras-container {
-    grid-template-columns: 1fr 1fr;
-  }
-  .fundadora {
-    margin: 0 auto;
-  }
-  .fundadora-direita {
-    text-align: center;
-  }
-  .fundadora-esquerda {
-    text-align: center;
-  }
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-  .fundadoras-container {
-    grid-template-columns: 1fr;
-  }
-  .fundadora h3,
-  .fundadora p {
-    text-align: center;
-    margin: 0;
-  }
-  .fundadora {
-    width: 100%;
-    max-width: 100%;
-  }
-  .imagem {
-    margin: 20px 0;
-  }
-}
 
 .fundadora {
   max-width: 250px;
@@ -303,4 +275,50 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 960px) {
+
+  .fundadoras-container {
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+ 
+  .fundadora-direita, .fundadora-esquerda {
+    text-align: center;
+    margin: 0; 
+  }
+  
+  #fundadora-img1, #fundadora-img2 {
+    margin: 0;
+  }
+}
+
+
+.img_pst {
+
+  height: 480px; 
+  background-color: #e0e0e0; 
+  background-position: center;
+  background-size: cover;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 auto; 
+  margin-bottom: 40px;
+  object-fit: cover;
+}
+
+.background-article{
+  padding-top: 6rem;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.conteudo-grupo{
+padding-left: 60px;
+padding-right: 60px ;
+  width: 1127px;
 }
