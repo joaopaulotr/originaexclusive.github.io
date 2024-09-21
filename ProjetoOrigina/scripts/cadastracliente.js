@@ -75,7 +75,7 @@ function validacaoEmail(email) {
         fantasia.parentNode.className = "input-box"
       }
 
-      if (razao.value.length <= 0 || validaLetra.test(razao.value)) {
+      if (razao.value.length <= 0) {
         errorInput(razao);
         erro++;
       } else {
