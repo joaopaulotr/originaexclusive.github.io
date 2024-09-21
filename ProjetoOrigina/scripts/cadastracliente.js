@@ -50,123 +50,138 @@ function validacaoEmail(email) {
       const validaCidade = /[^a-zA-ZÀ-ÖØ-öø-ÿ\s]/;
 
       // Pega os dados do cliente
-      let fantasia = document.querySelector('#nome-fantasia').value.trim();
-      let razao = document.querySelector('#razao-social').value.trim();
-      let email = document.querySelector('#email').value.trim();
-      let telefone = document.querySelector('#tel').value.trim();
-      let cnpj = document.querySelector('#CNPJ').value.trim();
-      let inscricaoEstadual = document.querySelector('#inscricao-estadual').value.trim();      
-      let inscricaoEstadualUF = document.querySelector('#UF-inscricao-estadual').value.trim();
-      let cpf = document.querySelector('#CPF').value.trim();
-      let cep = document.querySelector('#cep').value.trim();
-      let endereco = document.querySelector('#endereco').value.trim();
-      let numero = document.querySelector('#num').value.trim();
-      let complemento = document.querySelector('#complemento').value.trim();
-      let bairro = document.querySelector('#bairro').value.trim();
-      let estado = document.querySelector('#estado').value.trim();
-      let cidade = document.querySelector('#cidade').value.trim();
-      let linkInstagram = document.querySelector('#link-insta').value.trim();
+      let fantasia = document.querySelector('#nome-fantasia');
+      let razao = document.querySelector('#razao-social');
+      let email = document.querySelector('#email');
+      let telefone = document.querySelector('#tel');
+      let cnpj = document.querySelector('#CNPJ');
+      let inscricaoEstadual = document.querySelector('#inscricao-estadual');      
+      let inscricaoEstadualUF = document.querySelector('#UF-inscricao-estadual');
+      let cpf = document.querySelector('#CPF');
+      let cep = document.querySelector('#cep');
+      let endereco = document.querySelector('#endereco');
+      let numero = document.querySelector('#num');
+      let complemento = document.querySelector('#complemento');
+      let bairro = document.querySelector('#bairro');
+      let estado = document.querySelector('#estado');
+      let cidade = document.querySelector('#cidade');
+      let linkInstagram = document.querySelector('#link-insta');
 
       // Validações dos campos
-      if (fantasia.length <= 0) {
-        console.log('Nome Fantasia Inválido!');
+      if (fantasia.value.length <= 0) {
+        errorInput(fantasia);
         erro++;
       }
 
-      if (validaLetra.test(razao)) {
-        console.log('Razão inválida!');
+      if (razao.value.length <= 0) {
+        errorInput(razao);
         erro++;
       }
 
-      const emailValido = await validacaoEmail(email);
+      if (validaLetra.test(razao.value)) {
+        errorInput(razao);
+        erro++;
+      }
+
+      const emailValido = await validacaoEmail(email.value);
       if (emailValido) {
-        console.log('E-mail inválido!');
+        errorInput(email);
         erro++;
       }
 
-      if (telefone.length <= 0) {
-        console.log('Telefone incorreto!');
+      if (telefone.value.length <= 0) {
+        errorInput(telefone);
         erro++;
       }
 
-      if ((cnpj.length != 18) || !(validaCnpj.test(cnpj))) {
-        console.log('CNPJ incorreto!');
+      if ((cnpj.value.length != 18) || !(validaCnpj.test(cnpj.value))) {
+        errorInput(cnpj);
         erro++;
       }
 
-      if (!(validaInscricaoEstadual.test(inscricaoEstadual))) {
-        console.log('Inscrição Estadual inválida!');
+      if (inscricaoEstadual.value.length > 0) {
+        if (!(validaInscricaoEstadual.test(inscricaoEstadual.value))) {
+          errorInput(inscricaoEstadual);
+          erro++;
+        }
+      }
+
+      if (!(validaCpf.test(cpf.value)) || (cpf.value.length != 14)) {
+        errorInput(cpf);
         erro++;
       }
 
-      if (!(validaCpf.test(cpf)) || (cpf.length != 14)) {
-        console.log('CPF incorreto!');
+      if (!validaCEP.test(cep.value)) {
+        errorInput(cep);
         erro++;
       }
 
-      if (!validaCEP.test(cep)) {
-        console.log('CEP inválido!');
+      if (endereco.value.length <= 0) {
+        errorInput(endereco);
         erro++;
       }
 
-      if (endereco.length <= 0) {
-        console.log('Endereço inválido!');
+      if (!(validaNumero.test(numero.value)) || numero.value.length <= 0) {
+        errorInput(numero);
         erro++;
       }
 
-      if (!(validaNumero.test(numero)) || numero.length <= 0) {
-        console.log('Número inválido!');
+      if (bairro.value.length <= 0) {
+        errorInput(bairro);
         erro++;
       }
 
-      if (bairro.length <= 0) {
-        console.log('Bairro inválido!');
+      if (estado.value.length <= 0) {
+        errorInput(estado);
         erro++;
       }
 
-      if (estado.length <= 0) {
-        console.log('Estado inválido!');
+      if (validaCidade.test(cidade.value) || cidade.value.length <= 0) {
+        errorInput(cidade);
         erro++;
       }
 
-      if (validaCidade.test(cidade)) {
-        console.log('Cidade inválida!');
-        erro++;
-      }
-
-      if (linkInstagram.length <= 0) {
-        console.log('Perfil do Instagram inválido!');
+      if (linkInstagram.value.length <= 0) {
+        errorInput(linkInstagram);
         erro++;
       }
 
       // Se houver erros, não prosseguir
       if (erro > 0) {
-        console.log('Erro na validação. Corrija os campos!');
         return;
       }
 
       // Se não houver erros, prosseguir com o cadastro
       const payload = {
-        FANTASIA: fantasia,
-        RAZAO: razao,
-        EMAIL: email,
-        TELEFONE: "'" + telefone,
-        CNPJ: cnpj,
-        INSCRICAOESTADUAL: inscricaoEstadual,
-        INSCRICAOESTADUALUF: inscricaoEstadualUF,
-        CPF: cpf,
-        CEP: cep,
-        ENDERECO: endereco,
-        NUMERO: numero,
-        COMPLEMENTO: complemento,
-        BAIRRO: bairro,
-        ESTADO: estado,
-        CIDADE: cidade,
-        LINKINSTAGRAM: linkInstagram
+        FANTASIA: fantasia.value.trim(),
+        RAZAO: razao.value.trim(),
+        EMAIL: email.value.trim(),
+        TELEFONE: "'" + telefone.value.trim(),
+        CNPJ: cnpj.value.trim(),
+        INSCRICAOESTADUAL: inscricaoEstadual.value.trim(),
+        INSCRICAOESTADUALUF: inscricaoEstadualUF.value.trim(),
+        CPF: cpf.value.trim(),
+        CEP: cep.value.trim(),
+        ENDERECO: endereco.value.trim(),
+        NUMERO: numero.value.trim(),
+        COMPLEMENTO: complemento.value.trim(),
+        BAIRRO: bairro.value.trim(),
+        ESTADO: estado.value.trim(),
+        CIDADE: cidade.value.trim(),
+        LINKINSTAGRAM: linkInstagram.value.trim()
       };
 
       await createRow(payload);
-      console.log("Cadastro criado!");
+      alert("Cadastro criado!");
     });
   }
 });
+
+function errorInput(input) {
+  const formItem = input.parentNode;
+ // const textMessage = formItem.querySelector('a');
+
+// textMessage.innerText = message;
+
+  formItem.className = "input-box error";
+}

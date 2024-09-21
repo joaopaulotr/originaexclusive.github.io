@@ -58,11 +58,11 @@ if (buttonNewsletter) {
 
     // Se não houver erros, prosseguir com o cadastro
     const payload = {
-        EMAIL: email
+        EMAILNEWSLETTER: email
     };
 
     await createRow(payload);
-    console.log("Cadastro criado!");
+    alert("Email enviado!");
     });
 }
 });

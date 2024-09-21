@@ -42,6 +42,7 @@ form {
 .input-box {
   display: flex;
   flex-direction: column;
+  margin-bottom: -15px;
 }
 
 .input-box label {
@@ -70,6 +71,13 @@ form {
 .input-box input:focus {
   outline: 2px solid #4a5568;
   box-shadow: 0 0 5px rgba(18, 18, 18, 0.3);
+}
+
+.input-box a {
+  position: relative;
+  visibility: hidden; 
+  bottom: -3px;
+  font-size: 12px;
 }
 
 /* Botão de Enviar */
@@ -112,11 +120,15 @@ form {
   }
 }
 
-.form-content.error input{
-  border-color: #ff3b25;
+.input-box.error {
+  margin-bottom: 0px;
 }
 
-.form-content.error a{
-  color: #ff3b25;
-  visibility: visible;
+.input-box.error input{
+  outline: 2px solid #ff3b25a3;
+}
+
+.input-box.error a{
+  color: #ff3b25a3;
+  visibility: visible;  
 }
