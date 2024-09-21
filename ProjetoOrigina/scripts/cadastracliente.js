@@ -75,14 +75,7 @@ function validacaoEmail(email) {
         fantasia.parentNode.className = "input-box"
       }
 
-      if (razao.value.length <= 0) {
-        errorInput(razao);
-        erro++;
-      } else {
-        razao.parentNode.className = "input-box"
-      }
-
-      if (validaLetra.test(razao.value)) {
+      if (razao.value.length <= 0 || validaLetra.test(razao.value)) {
         errorInput(razao);
         erro++;
       } else {
@@ -179,8 +172,6 @@ function validacaoEmail(email) {
       // Se houver erros, não prosseguir
       if (erro > 0) {
         return;
-      } else {
-        fantasia.parentNode.className = "input-box"
       }
 
       // Se não houver erros, prosseguir com o cadastro
