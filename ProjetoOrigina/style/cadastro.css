@@ -111,3 +111,12 @@ form {
     grid-template-columns: 1fr; /* Uma coluna para telas menores */
   }
 }
+
+.form-content.error input{
+  border-color: #ff3b25;
+}
+
+.form-content.error a{
+  color: #ff3b25;
+  visibility: visible;
+}
