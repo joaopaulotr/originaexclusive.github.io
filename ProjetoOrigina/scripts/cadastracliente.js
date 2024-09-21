@@ -71,32 +71,44 @@ function validacaoEmail(email) {
       if (fantasia.value.length <= 0) {
         errorInput(fantasia);
         erro++;
+      } else {
+        fantasia.parentNode.className = "input-box"
       }
 
       if (razao.value.length <= 0) {
         errorInput(razao);
         erro++;
+      } else {
+        razao.parentNode.className = "input-box"
       }
 
       if (validaLetra.test(razao.value)) {
         errorInput(razao);
         erro++;
+      } else {
+        razao.parentNode.className = "input-box"
       }
 
       const emailValido = await validacaoEmail(email.value);
       if (emailValido) {
         errorInput(email);
         erro++;
+      } else {
+        email.parentNode.className = "input-box"
       }
 
       if (telefone.value.length <= 0) {
         errorInput(telefone);
         erro++;
+      } else {
+        telefone.parentNode.className = "input-box"
       }
 
       if ((cnpj.value.length != 18) || !(validaCnpj.test(cnpj.value))) {
         errorInput(cnpj);
         erro++;
+      } else {
+        cnpj.parentNode.className = "input-box"
       }
 
       if (inscricaoEstadual.value.length > 0) {
@@ -104,51 +116,71 @@ function validacaoEmail(email) {
           errorInput(inscricaoEstadual);
           erro++;
         }
+      } else {
+        inscricaoEstadual.parentNode.className = "input-box"
       }
 
       if (!(validaCpf.test(cpf.value)) || (cpf.value.length != 14)) {
         errorInput(cpf);
         erro++;
+      } else {
+        cpf.parentNode.className = "input-box"
       }
 
       if (!validaCEP.test(cep.value)) {
         errorInput(cep);
         erro++;
+      } else {
+        cep.parentNode.className = "input-box"
       }
 
       if (endereco.value.length <= 0) {
         errorInput(endereco);
         erro++;
+      } else {
+        endereco.parentNode.className = "input-box"
       }
 
       if (!(validaNumero.test(numero.value)) || numero.value.length <= 0) {
         errorInput(numero);
         erro++;
+      } else {
+        numero.parentNode.className = "input-box"
       }
 
       if (bairro.value.length <= 0) {
         errorInput(bairro);
         erro++;
+      } else {
+        bairro.parentNode.className = "input-box"
       }
 
       if (estado.value.length <= 0) {
         errorInput(estado);
         erro++;
+      } else {
+        estado.parentNode.className = "input-box"
       }
 
       if (validaCidade.test(cidade.value) || cidade.value.length <= 0) {
         errorInput(cidade);
         erro++;
+      } else {
+        cidade.parentNode.className = "input-box"
       }
 
       if (linkInstagram.value.length <= 0) {
         errorInput(linkInstagram);
         erro++;
+      } else {
+        linkInstagram.parentNode.className = "input-box"
       }
 
       // Se houver erros, não prosseguir
       if (erro > 0) {
         return;
+      } else {
+        fantasia.parentNode.className = "input-box"
       }
 
       // Se não houver erros, prosseguir com o cadastro

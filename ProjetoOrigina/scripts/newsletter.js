@@ -46,7 +46,7 @@ if (buttonNewsletter) {
     // Validações dos campos
     const emailValido = await validacaoEmail(email);
     if (emailValido) {
-        console.log('E-mail inválido!');
+        alert('E-mail inválido!');
         erro++;
     }
 
