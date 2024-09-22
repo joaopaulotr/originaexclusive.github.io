@@ -1,12 +1,25 @@
 function menuShow() {
   let menuMobile = document.querySelector(".mobile-menu");
-  if (menuMobile.classList.contains("open")) {
-    menuMobile.classList.remove("open");
-    document.querySelector(".icon").src = "assets/menu_white_36dp.svg";
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition < 525) {
+    if (menuMobile.classList.contains("open")) {
+      menuMobile.classList.remove("open");
+      document.querySelector(".iconm").src = "assets/menu_white_36dp.svg";
+    } else {
+      menuMobile.classList.add("open");
+      document.querySelector(".iconm").src = "assets/close_white_36dp.svg";
+    }
   } else {
-    menuMobile.classList.add("open");
-    document.querySelector(".icon").src = "assets/close_white_36dp.svg";
+    if (menuMobile.classList.contains("open")) {
+      menuMobile.classList.remove("open");
+      document.querySelector(".iconm").src = "assets/menu_black_36dp.svg";
+    } else {
+      menuMobile.classList.add("open");
+      document.querySelector(".iconm").src = "assets/close_black_36dp.svg";
+    }
   }
+
 }
 
 //Completando informações dos campos automaticamente:
@@ -124,7 +137,7 @@ function changeMenuOnScroll() {
 }
 
 function changeCloseOnScroll() {
-  const headerLogo = document.querySelector(".icon");
+  const headerLogo = document.querySelector(".iconm");
   const scrollPosition = window.scrollY;
 
   if (scrollPosition > 525) {
@@ -136,7 +149,7 @@ function changeCloseOnScroll() {
 
 window.addEventListener("scroll", changeLogoOnScroll);
 window.addEventListener("scroll", changeMenuOnScroll);
-window.addEventListener("scroll", changeCloseOnScroll);
+headerLogo.addEventListener("click", changeCloseOnScroll);
 
 
 window.addEventListener('scroll', function() {
