@@ -194,6 +194,23 @@ function validacaoEmail(email) {
         LINKINSTAGRAM: linkInstagram.value.trim()
       };
 
+      fantasia.value = "";
+      razao.value = "";
+      email.value = "";
+      telefone.value = "";
+      cnpj.value = "";
+      inscricaoEstadual.value = "";      
+      inscricaoEstadualUF.value = "";
+      cpf.value = "";
+      cep.value = "";
+      endereco.value = "";
+      numero.value = "";
+      complemento.value = "";
+      bairro.value = "";
+      estado.value = "";
+      cidade.value = "";
+      linkInstagram.value = "";
+
       alert("Cadastro criado!");
       await createRow(payload);
     });
