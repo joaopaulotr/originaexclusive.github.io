@@ -1,5 +1,5 @@
 .container {
-  background-image: url(/ProjetoOrigina/assets/background.png);
+  background-image: url("../assets/background.png");
   max-width: 800;
   max-height: 1680;
   margin: 0 auto;
