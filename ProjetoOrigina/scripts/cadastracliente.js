@@ -194,8 +194,8 @@ function validacaoEmail(email) {
         LINKINSTAGRAM: linkInstagram.value.trim()
       };
 
-      await createRow(payload);
       alert("Cadastro criado!");
+      await createRow(payload);
     });
   }
 });

@@ -61,8 +61,8 @@ if (buttonNewsletter) {
         EMAILNEWSLETTER: email
     };
 
-    await createRow(payload);
     alert("Email enviado!");
+    await createRow(payload);
     });
 }
 });
