@@ -147,6 +147,8 @@ function changeCloseOnScroll() {
   }
 }
 
+let headerLogo = document.querySelector(".iconm");
+
 window.addEventListener("scroll", changeLogoOnScroll);
 window.addEventListener("scroll", changeMenuOnScroll);
 headerLogo.addEventListener("click", changeCloseOnScroll);
