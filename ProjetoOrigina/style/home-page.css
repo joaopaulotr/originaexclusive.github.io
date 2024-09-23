@@ -45,7 +45,7 @@ header.rolagem .nav-item :hover {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3rem;
   align-items: center;
   width: 100%;
 }
@@ -170,6 +170,7 @@ header.rolagem .nav-item :hover {
 
   .mobile-menu ul {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
@@ -740,7 +741,7 @@ footer {
 @media screen and (max-width: 426px) {
   #footer_content {
       grid-template-columns: repeat(1, 1fr);
-      padding: 3rem 2rem;
+      padding: 3rem 1rem;
   }
 }
 
