@@ -1,11 +1,12 @@
 .container {
-  background-image: url("../assets/background.png");
+  background-image: url("../assets/backgroundcadastro.png");
   max-width: 800;
   max-height: 1680;
   margin: 0 auto;
   display: flex;
   justify-content: center; 
   align-items: center;
+  background-size: cover;
   
 }
 

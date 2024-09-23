@@ -594,10 +594,11 @@ h6 {
 
 footer {
   padding-left: 55px;
-  background-image: url("..//assets/Group 54.png");
+  background-image: url("..//assets/footer.png");
   width: auto;
   height: auto;
   object-fit: cover;
+  background-size: cover;
 }
 
 .footer-principal {
