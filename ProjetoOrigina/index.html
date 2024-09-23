@@ -31,7 +31,7 @@
           <!--mudar a cor da logo para mais escuro (testar)-->
           <h1 class="origina">
             <a href="index.html"
-              ><img src="assets/origina_logo_branca.svg" alt=""
+              ><img src="assets/logonavbarbranca.svg" alt=""
             /></a>
           </h1>
         </div>
@@ -59,7 +59,7 @@
 
         <div class="mobile-menu-icon">
           <button onclick="menuShow()">
-            <img class="iconm" src="assets/menu_white_36dp.svg" alt="" />
+            <img class="iconm" src="assets/logonavbarpreta.svg" alt="" />
           </button>
         </div>
       </nav>
@@ -88,6 +88,7 @@
     </header>
 
     <section class="banner"></section>
+    <section class="banner-celular"></section>
 
     <script type="module" src="scripts/newsletter.js" defer></script>
     <script type="module" src="scripts/cadastracliente.js" defer></script>
@@ -321,11 +322,30 @@
     
            
             <div class="continue-button">
-              <button type="submit" class="send-button">Enviar</button> 
+              <button type="submit" class="send-button">Enviar</button>
             </div>
           </form>
         </div>
       </div>
+
+      <div>
+        <dialog id="dialog_error">
+          <p id="dialog_error_p">Dados Inválidos!</p>
+          <button id="dialog_close"><p>Fechar</p></button>
+        </dialog>
+      </div>
+      
+
+    
+      <div></div>
+        <dialog id="dialog_enviado">
+          <p id="dialog_enviado_p">
+            Obrigado por se cadastrar!
+          </p>
+          <button id="dialog_close"><p>Fechar</p></button>
+        </dialog>
+      </div>
+
     </section>
     
 

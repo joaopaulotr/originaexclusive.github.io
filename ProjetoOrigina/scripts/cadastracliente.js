@@ -108,9 +108,9 @@ function validacaoEmail(email) {
         if (!(validaInscricaoEstadual.test(inscricaoEstadual.value))) {
           errorInput(inscricaoEstadual);
           erro++;
+        }else {
+          inscricaoEstadual.parentNode.className = "input-box"
         }
-      } else {
-        inscricaoEstadual.parentNode.className = "input-box"
       }
 
       if (!(validaCpf.test(cpf.value)) || (cpf.value.length != 14)) {
@@ -225,3 +225,8 @@ function errorInput(input) {
 
   formItem.className = "input-box error";
 }
+
+
+
+//--------------------------------------------------------LEO-----------------------------------------------------------------//
+

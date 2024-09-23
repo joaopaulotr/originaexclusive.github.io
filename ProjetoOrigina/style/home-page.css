@@ -255,7 +255,7 @@ h6 {
 }
 
 .banner {
-  background-image: url("../assets/background.png");
+  background-image: url("../assets/banneroroginapc.png");
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -266,6 +266,35 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+
+.banner-celular {
+  
+  display: none;
+  background-image: url("../assets/banneroriginacelular.png");
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    display: none;
+  }
+
+  .banner-celular {
+    display: flex;
+    background-image: url("../assets/banneroriginacelular.png"); 
+  }
+
 }
 .text-content {
   width: 200px;
@@ -374,6 +403,7 @@ h6 {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+
 .item.large {
   grid-column: span 2; /* Ocupa duas colunas */
   grid-row: span 2; /* Ocupa duas linhas */
@@ -384,7 +414,12 @@ h6 {
   grid-row: span 2; /* Ocupa uma linha */
 }
 
-.item:hover img {
+
+.item img.animate {
+  transform: scale(1.1);
+}
+
+.item:hover img, .item.touch-active img {
   transform: scale(1.1);
 }
 
@@ -404,7 +439,7 @@ h6 {
   pointer-events: none; /* Para não interferir no clique da imagem */
 }
 
-.item:hover .overlay {
+.item:hover .overlay, .item.touch-active .overlay {
   opacity: 1;
 }
 

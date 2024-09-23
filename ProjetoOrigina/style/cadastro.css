@@ -132,3 +132,169 @@ form {
   color: #ff3b25a3;
   visibility: visible;  
 }
+
+
+dialog ::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dialog_error {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 125px;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.5px;
+  letter-spacing: 0.16px;
+  flex-direction: column;
+  background-color: white;
+}
+
+dialog {
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+#dialog_error_p {
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+#dialog_close {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: rgba(50, 50, 50, 0.70);
+  color: rgba(255, 255, 255, 0.80);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  text-decoration: none;
+}
+
+#dialog_close:hover {
+  background-color:rgba(50, 50, 50, 0.949);
+}
+
+
+#dialog_error {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 125px;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.5px;
+  letter-spacing: 0.16px;
+  flex-direction: column;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+#dialog_enviado {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 125px;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.5px;
+  letter-spacing: 0.16px;
+  flex-direction: column;
+  background-color: white;
+}
+
+dialog {
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+#dialog_enviado_p {
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+#dialog_close {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: rgba(50, 50, 50, 0.70);
+  color: rgba(255, 255, 255, 0.80);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  text-decoration: none;
+}
+
+#dialog_close:hover {
+  background-color:rgba(50, 50, 50, 0.949);
+}
+
+
+#dialog_enviado {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 125px;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.5px;
+  letter-spacing: 0.16px;
+  flex-direction: column;
+  background-color: white;
+}
