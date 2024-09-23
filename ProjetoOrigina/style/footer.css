@@ -13,7 +13,7 @@
   
   footer {
     padding-left: 55px;
-    background-image: url(/ProjetoOrigina/assets/Group\ 54.png);
+    background-image: url('../assets/Group 54.png');
     width: auto;
     height: auto;
     object-fit: cover;
