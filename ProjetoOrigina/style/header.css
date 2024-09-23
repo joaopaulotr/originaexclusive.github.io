@@ -95,7 +95,7 @@
   }
   
   .nav-link {
-    display: flex;
+    display: inline-flex;
     cursor: pointer;
     transition: color 0.2s ease;
     text-decoration: none;

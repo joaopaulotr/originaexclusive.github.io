@@ -281,11 +281,10 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1170px) {
   .banner {
     display: none;
   }
