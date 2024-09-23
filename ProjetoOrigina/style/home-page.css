@@ -145,7 +145,7 @@ header.rolagem .nav-item :hover {
 
 @media screen and (max-width: 1218px) {
   .nav-bar {
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 2rem;
   }
 
   @media (max-width: 768px) {
@@ -753,7 +753,7 @@ footer {
 }
 @media (max-width: 400px) {
   footer{
-     padding-left:35px ;
+     padding-left:20px ;
   }
  
 }
