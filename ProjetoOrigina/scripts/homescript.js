@@ -5,18 +5,18 @@ function menuShow() {
   if (scrollPosition < 525) {
     if (menuMobile.classList.contains("open")) {
       menuMobile.classList.remove("open");
-      document.querySelector(".iconm").src = "assets/logonavbarbranca.svg";
+      document.querySelector(".iconm").src = "assets/menu_white_36dp.svg";
     } else {
       menuMobile.classList.add("open");
-      document.querySelector(".iconm").src = "assets/logonavbarbranca.svg";
+      document.querySelector(".iconm").src = "assets/close_white_36dp.svg";
     }
   } else {
     if (menuMobile.classList.contains("open")) {
       menuMobile.classList.remove("open");
-      document.querySelector(".iconm").src = "assets/logonavbarpreta.svg";
+      document.querySelector(".iconm").src = "assets/menu_black_36dp.svg";
     } else {
       menuMobile.classList.add("open");
-      document.querySelector(".iconm").src = "assets/logonavbarpreta.svg";
+      document.querySelector(".iconm").src = "assets/close_black_36dp.svg";
     }
   }
 
@@ -119,9 +119,9 @@ function changeLogoOnScroll() {
   const scrollPosition = window.scrollY;
 
   if (scrollPosition > 525) {
-    headerLogo.src = "assets/logonavbarpreta.svg";
+    headerLogo.src = "assets/origin_logo_preta.svg";
   } else {
-    headerLogo.src = "assets/logonavbarbranca.svg";
+    headerLogo.src = "assets/origina_logo_branca.svg";
   }
 }
 
@@ -130,9 +130,9 @@ function changeMenuOnScroll() {
   const scrollPosition = window.scrollY;
 
   if (scrollPosition > 525) {
-    headerLogo.src = "assets/logonavbarpreta.svg";
+    headerLogo.src = "assets/menu_black_36dp.svg";
   } else {
-    headerLogo.src ="assets/logonavbarbranca.svg";
+    headerLogo.src ="assets/menu_white_36dp.svg";
   }
 }
 
@@ -141,9 +141,9 @@ function changeCloseOnScroll() {
   const scrollPosition = window.scrollY;
 
   if (scrollPosition > 525) {
-    headerLogo.src = "assets/logonavbarpreta.svg";
+    headerLogo.src = "assets/close_black_36dp.svg";
   } else {
-    headerLogo.src ="assets/logonavbarbranca.svg";
+    headerLogo.src ="assets/close_white_36dp.svg";
   }
 }
 
@@ -175,7 +175,7 @@ window.addEventListener('scroll', function() {
 
 });
 
-document.querySelectorAll('#cadastro').forEach(anchor => {
+document.querySelectorAll('.input-box').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const targetSection = document.querySelector(this.getAttribute('href'));
