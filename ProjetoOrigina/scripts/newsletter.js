@@ -61,10 +61,10 @@ if (buttonNewsletter) {
         EMAILNEWSLETTER: email
     };
 
-    email.value = "";
-
     alert("Email enviado!");
     await createRow(payload);
+
+    email = "";
     });
 }
 });
