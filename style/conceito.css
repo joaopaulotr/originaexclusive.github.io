@@ -5,15 +5,10 @@
   }
   
   .background-article {
-    height: 80vh;
+    height: 120vh;
   }
 
-  @media (max-width: 1200px) {
-    .background-article {
-        height: 120vh;
-    }
-    }
-  
+
   body {
     font-family: "Roboto", sans-serif;
     font-size: 2rem;
