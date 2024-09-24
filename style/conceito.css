@@ -7,6 +7,12 @@
   .background-article {
     height: 80vh;
   }
+
+  @media (max-width: 1200px) {
+    .background-article {
+        height: 120vh;
+    }
+    }
   
   body {
     font-family: "Roboto", sans-serif;
