@@ -4,6 +4,10 @@
   --gap: 3rem;
 }
 
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -173,10 +177,13 @@ header.rolagem .nav-item :hover {
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 1rem;
+    
     background-color: #565353; /* Fundo preto */
     width: max-content; /* Ajusta a largura para cobrir as palavras */
-    padding: 1rem; /* Ajusta o espaçamento interno */
+    padding-top: 1.50rem; /* Ajusta o espaçamento interno */
+    padding-right: 1.75rem;
+    padding-left: 1.50rem;
+    padding-bottom: 1.75rem;
     border-radius: 0.5rem; /* Adiciona cantos arredondados */
     margin-left: 4rem;
   }
@@ -234,6 +241,22 @@ h5 {
 h6 {
   font-size: 3.5rem;
 }
+
+.icone-globo {
+  width: 50px;   
+  height: 50px;  
+}
+
+.icone-carrinho{
+  width: 50px;   
+  height: 50px;  
+}
+
+.icone-calendario{
+  width: 50px;   
+  height: 50px;  
+}
+
 
 .main-bg {
   background-color: var(
@@ -322,7 +345,7 @@ h6 {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 22.19rem;
+  height: 20rem;
 }
 
 .grid1-content {
@@ -549,7 +572,7 @@ h6 {
   font-weight: 300;
   line-height: 27.5px;
   letter-spacing: 0.16px;
-  text-transform: lowercase;
+  
 }
 
 .imagem {

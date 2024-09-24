@@ -10,6 +10,14 @@
   
 }
 
+@media (max-width: 1170px) {
+  .container {
+    background-image: url("../assets/container-celular.png");
+    background-repeat: no-repeat;
+    
+  }
+}
+
 form {
   background-color: transparent;
   padding: 30px;
