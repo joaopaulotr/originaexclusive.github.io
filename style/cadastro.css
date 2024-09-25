@@ -12,6 +12,13 @@
   
 }
 
+form {
+  background-color: rgba(238, 238, 238, 0.7);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 30px;
+}
+
 @media (max-width: 1170px) {
   .container {
     background-image: url("../assets/container-celular.png");
@@ -24,14 +31,6 @@
     border-radius: 0px;
   }
 }
-
-form {
-  background-color: rgba(238, 238, 238, 0.7);
-  padding: 30px;
-  margin: 20px;
-  border-radius: 30px;
-}
-
 
 .form-header .title h1 {
   color: black;

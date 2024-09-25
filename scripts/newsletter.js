@@ -41,10 +41,10 @@ if (buttonNewsletter) {
     let erro = 0;
 
     // Pega os dados do cliente
-    let email = document.querySelector('#emailn').value.trim();
+    let email = document.querySelector('#emailn');
 
     // Validações dos campos
-    const emailValido = await validacaoEmail(email);
+    const emailValido = await validacaoEmail(email.value);
     if (emailValido) {
         alert('E-mail inválido!');
         erro++;
@@ -58,16 +58,12 @@ if (buttonNewsletter) {
 
     // Se não houver erros, prosseguir com o cadastro
     const payload = {
-        EMAILNEWSLETTER: email
+        EMAILNEWSLETTER: email.value.trim()
     };
 
-    alert("Email enviado!");
+    email.value = "";
+    email.placeholder = "Email cadastrado!";
     await createRow(payload);
-
-    email = "";
-
-    const colocaPlaceHolder = document.querySelector('#emailn');
-    colocaPlaceHolder.placeholder = "Email cadastrado!";
     });
 }
 });
