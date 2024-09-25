@@ -1,4 +1,5 @@
 .container {
+  background-color: rgba(0, 0, 0, 0.5); 
   background-image: url("../assets/backgroundcadastro.png");
   max-width: 800;
   max-height: 1680;
@@ -7,6 +8,7 @@
   justify-content: center; 
   align-items: center;
   background-size: cover;
+  position: relative;
   
 }
 
@@ -19,9 +21,12 @@
 }
 
 form {
-  background-color: transparent;
+  background-color: rgba(238, 238, 238, 0.7);
   padding: 30px;
+  margin: 20px;
+  border-radius: 30px;
 }
+
 
 .form-header .title h1 {
   color: black;
@@ -46,6 +51,7 @@ form {
   gap: 10px; /* Reduz o espaçamento entre as colunas */
   margin-top: 20px;
   width: 100%; 
+  z-index: 9;
 }
 
 .input-box {
@@ -56,15 +62,16 @@ form {
 
 .input-box label {
   font-family: "Roboto", sans-serif;
-  font-size: 12px; /* Aumenta ligeiramente o tamanho da fonte do label */
-  color: #333;
+  font-size: 13px; 
+  color: #000000;
   margin-bottom: 5px;
   font-weight: 400;
+  
 }
 
 .input-box input {
   padding: 10px; /* Aumenta o padding para campos maiores */
-  background: rgba(50, 50, 50, 0.70);
+  background: rgba(50, 50, 50, 0.80);
   border: 1px solid #FFF;
   color: rgba(255, 255, 255, 0.80); /* Ajusta a cor do texto nos campos */
   border: none;
@@ -108,7 +115,7 @@ form {
   font-weight: 400;
   text-decoration: none; 
 
-  background-color:rgba(50, 50, 50, 0.70);
+  background-color:rgba(50, 50, 50, 0.80);
   color: rgba(255, 255, 255, 0.80);
   padding: 10px 40px;
   border: none;
@@ -140,11 +147,6 @@ form {
 .input-box.error a{
   color: #ff3b25a3;
   visibility: visible;  
-}
-
-
-dialog ::backdrop {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #dialog_error {
@@ -187,15 +189,16 @@ dialog {
   color: #333;
   margin-bottom: 5px;
   font-weight: 400;
-  text-decoration: none;
-  background-color: rgba(50, 50, 50, 0.70);
+  text-decoration: none; 
+
+  background-color:rgba(50, 50, 50, 0.80);
   color: rgba(255, 255, 255, 0.80);
-  padding: 5px 20px;
+  padding: 10px 40px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.4s ease;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .dialog_close:hover {
@@ -226,3 +229,22 @@ dialog {
   padding-bottom: 15px;
   padding-top: 10px;
 }
+
+
+#cadastro {
+  position: relative;
+}
+
+.overlay-enviado {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: none;
+align-items: center;
+justify-content: center;
+background: rgba(0, 0, 0, 0.6);
+z-index: 9;
+}
+

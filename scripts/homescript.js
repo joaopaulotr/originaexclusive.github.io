@@ -19,7 +19,7 @@ function menuShow() {
       document.querySelector(".iconm").src = "assets/close_black_36dp.svg";
     }
   }
-
+A
 }
 
 //Completando informações dos campos automaticamente:
@@ -119,11 +119,12 @@ function changeLogoOnScroll() {
   const scrollPosition = window.scrollY;
 
   if (scrollPosition > 525) {
-    headerLogo.src = "assets/origin_logo_preta.svg";
+    headerLogo.src = "assets/logo_extended_black.png";
   } else {
-    headerLogo.src = "assets/origina_logo_branca.svg";
+    headerLogo.src = "assets/logo_extended_white.png";
   }
 }
+
 
 function changeMenuOnScroll() {
   const headerLogo = document.querySelector(".iconm");

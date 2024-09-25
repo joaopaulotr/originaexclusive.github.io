@@ -27,6 +27,12 @@ header {
   top: 0;
   left: 0;
 }
+
+.logo-nav{
+  width: 140px;
+  height: auto;
+}
+
 header.rolagem {
   background-color: white;
   padding: 8px 3%;

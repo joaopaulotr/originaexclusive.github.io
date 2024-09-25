@@ -9,6 +9,11 @@
     margin: 0;
     padding: 0;
   }
+
+  .logo-nav{
+    width: 140px;
+    height: auto;
+  }
   
   header {
 

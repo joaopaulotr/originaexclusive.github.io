@@ -211,8 +211,8 @@ function validacaoEmail(email) {
       cidade.value = "";
       linkInstagram.value = "";
 
-      alert("Cadastro criado!");
-      await createRow(payload);
+    document.querySelector('.overlay-enviado').style.display = 'flex';      await createRow(payload);
+
     });
   }
 });
@@ -226,6 +226,9 @@ function errorInput(input) {
   formItem.className = "input-box error";
 }
 
+document.querySelector('.dialog_close').addEventListener('click', () => {
+  document.querySelector('.overlay-enviado').style.display = 'none';
+});
 
 
 //--------------------------------------------------------LEO-----------------------------------------------------------------//

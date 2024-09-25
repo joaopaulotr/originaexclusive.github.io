@@ -10,6 +10,11 @@
     padding: 0;
   }
   
+  .logo-nav{
+    width: 140px;
+    height: auto;
+  }
+
   header {
     background-color: #565353;
     z-index: 10;
