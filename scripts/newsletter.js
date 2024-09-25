@@ -65,6 +65,9 @@ if (buttonNewsletter) {
     await createRow(payload);
 
     email = "";
+
+    const colocaPlaceHolder = document.querySelector('#emailn');
+    colocaPlaceHolder.placeholder = "Email cadastrado!";
     });
 }
 });

@@ -152,7 +152,7 @@
     padding: 1.5rem;
     font-weight: 200;
   }
-  
+
   @media screen and (max-width: 768px) {
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
