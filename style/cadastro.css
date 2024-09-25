@@ -16,7 +16,12 @@
   .container {
     background-image: url("../assets/container-celular.png");
     background-repeat: no-repeat;
-    
+  }
+
+  form{
+    background-color: transparent;
+    margin: 0;
+    border-radius: 0px;
   }
 }
 
