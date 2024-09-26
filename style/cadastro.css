@@ -100,6 +100,48 @@ form {
   font-size: 12px;
 }
 
+.input-box.cnpj {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -30px;
+}
+
+.input-box.cnpj label {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px; 
+  color: #000000;
+  margin-bottom: 5px;
+  font-weight: 400;
+  
+}
+
+.input-box.cnpj input {
+  padding: 10px; /* Aumenta o padding para campos maiores */
+  background: rgba(50, 50, 50, 0.80);
+  border: 1px solid #FFF;
+  color: rgba(255, 255, 255, 0.80); /* Ajusta a cor do texto nos campos */
+  border: none;
+  border-radius: 3px;
+  font-size: 18px; /* Aumenta o tamanho da fonte */
+  width: 100%; /* Faz os inputs ocuparem a largura total */
+}
+
+.input-box.cnpj input::placeholder {
+  color: rgba(255, 255, 255, 0.50); /* Ajusta a cor do placeholder */
+}
+
+.input-box.cnpj input:focus {
+  outline: 2px solid #4a5568;
+  box-shadow: 0 0 5px rgba(18, 18, 18, 0.3);
+}
+
+.input-box.cnpj a {
+  position: relative;
+  visibility: hidden; 
+  bottom: -3px;
+  font-size: 12px;
+}
+
 /* Botão de Enviar */
 .continue-button {
   display: flex;
@@ -151,6 +193,18 @@ form {
 .input-box.error a{
   color: #ff3b25a3;
   visibility: visible;  
+}
+
+.input-box.error-cnpj {
+  margin-bottom: -15px;
+}
+
+.input-box.error-cnpj input{
+  outline: 2px solid #ff3b25a3;
+}
+
+.input-box.error-cnpj a{
+  color: #ff3b25a3;
 }
 
 #dialog_error {

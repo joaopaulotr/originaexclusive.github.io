@@ -214,10 +214,11 @@
             </div>
     
             <div class="input-group">
-              <div class="input-box">
+              <div class="input-box cnpj">
                 <label for="CNPJ">*CNPJ:</label>
                 <input id="CNPJ" type="text" name="CNPJ" required />
-                <a>CNPJ incorreto!</a>
+                <a class="cnpj_incorreto">CNPJ inválido!</a>
+                <a class="cnpj_existente">CNPJ já cadastrado!</a>
               </div>
               <div class="input-box">
                 <label for="razao-social">*Razão Social:</label>
@@ -232,7 +233,7 @@
               <div class="input-box">
                 <label for="tel">*Telefone:</label>
                 <input id="tel" type="text" name="tel" placeholder="(  )" required />
-                <a>Telefone incorreto!</a>
+                <a>Telefone inválido!</a>
               </div>
               <div class="input-box">
                 <label for="link-insta">*Link de seu Instagram comercial:</label>

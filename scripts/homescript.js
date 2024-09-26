@@ -66,31 +66,6 @@ tel.addEventListener('keypress', () => {
     
 })
 
-
-let cpf = document.querySelector('#CPF');
-cpf.addEventListener('keypress', () => {
-  let inputLength = cpf.value.length;
-
-  if (inputLength == 3 || inputLength == 7) {
-    cpf.value += '.';
-  }
-
-  if (inputLength == 11) {
-    cpf.value += '-';
-  }
-
-})
-
-let cep = document.querySelector('#cep');
-cep.addEventListener('keypress', () => {
-  let inputLength = cep.value.length;
-
-  if (inputLength == 5) {
-    cep.value += '-';
-  }
-
-})
-
 let cnpj = document.querySelector('#CNPJ');
 cnpj.addEventListener('keypress', () => {
   let inputLength = cnpj.value.length;
