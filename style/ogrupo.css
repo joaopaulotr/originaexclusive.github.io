@@ -276,7 +276,7 @@ body {
   align-items: center;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1210px) {
 
   .fundadoras-container {
     flex-direction: column; 
@@ -297,7 +297,7 @@ body {
 
 .img_pst img {
 
-  height: 300px; 
+  height: 250px; 
   width: auto;
   background-position: center;
   background-size: cover;
@@ -307,6 +307,12 @@ body {
   margin: 0 auto; 
   margin-bottom: 40px;
   object-fit: cover;
+}
+
+@media (max-width: 900px){
+  .img_pst img{
+    height: 200px;
+  }
 }
 
 .background-article{
@@ -340,7 +346,7 @@ body {
   
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1210px) {
   .linha{
     border: 1px solid rgba(0, 0, 0, 0.4);
     height: 0;
@@ -355,4 +361,3 @@ body {
     padding-left: 0;
   }  
 }
-

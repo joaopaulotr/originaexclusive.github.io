@@ -64,6 +64,7 @@
     color: white;
     border-radius: 50%;
     transition: all 0.4s;
+    padding-top: 0.2rem;
   }
   
   #footer_social_media .footer-link i {
@@ -75,15 +76,15 @@
   }
   
   #instagram {
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    background-color: #565353;
   }
   
   #facebook {
-    background-color: #4267b3;
+    background-color: #565353;
   }
   
   #whatsapp {
-    background-color: #25d366;
+    background-color: #565353;
   }
   
   .footer-list {
