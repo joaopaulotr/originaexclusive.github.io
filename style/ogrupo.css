@@ -295,10 +295,10 @@ body {
 }
 
 
-.img_pst {
+.img_pst img {
 
-  height: 480px; 
-  background-color: #e0e0e0; 
+  height: 300px; 
+  width: auto;
   background-position: center;
   background-size: cover;
   display: flex; 
@@ -317,7 +317,42 @@ body {
 }
 
 .conteudo-grupo{
-padding-left: 60px;
-padding-right: 60px ;
-  width: 1127px;
+  width: auto;
 }
+
+.fundadora-imagem1 img{
+  padding-right: 20px;
+  height: auto;
+  width: 300px;
+}
+
+.fundadora-imagem2 img{
+  padding-left: 20px;
+  height: auto;
+  width: 300px;
+}
+
+.linha{
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 960px) {
+  .linha{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    height: 0;
+    width: 100px;
+  }
+
+  .fundadora-imagem1 img{
+    padding-right: 0;
+  }
+
+  .fundadora-imagem2 img{
+    padding-left: 0;
+  }  
+}
+
