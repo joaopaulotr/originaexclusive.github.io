@@ -1,15 +1,14 @@
 .container {
-  background-color: rgba(0, 0, 0, 0.5); 
-  background-image: url("../assets/backgroundcadastro.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../assets/imagecadastromini.png");
   max-width: 800;
   max-height: 1680;
   margin: 0 auto;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background-size: cover;
   position: relative;
-  
 }
 
 form {
@@ -25,7 +24,7 @@ form {
     background-repeat: no-repeat;
   }
 
-  form{
+  form {
     background-color: transparent;
     margin: 0;
     border-radius: 0px;
@@ -51,10 +50,13 @@ form {
 /* Grupo de Inputs */
 .input-group {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Garante duas colunas de tamanho igual */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Garante duas colunas de tamanho igual */
   gap: 10px; /* Reduz o espaçamento entre as colunas */
   margin-top: 20px;
-  width: 100%; 
+  width: 100%;
   z-index: 9;
 }
 
@@ -66,18 +68,17 @@ form {
 
 .input-box label {
   font-family: "Roboto", sans-serif;
-  font-size: 13px; 
+  font-size: 13px;
   color: #000000;
   margin-bottom: 5px;
   font-weight: 400;
-  
 }
 
 .input-box input {
   padding: 10px; /* Aumenta o padding para campos maiores */
-  background: rgba(50, 50, 50, 0.80);
-  border: 1px solid #FFF;
-  color: rgba(255, 255, 255, 0.80); /* Ajusta a cor do texto nos campos */
+  background: rgba(50, 50, 50, 0.8);
+  border: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.8); /* Ajusta a cor do texto nos campos */
   border: none;
   border-radius: 3px;
   font-size: 18px; /* Aumenta o tamanho da fonte */
@@ -85,7 +86,7 @@ form {
 }
 
 .input-box input::placeholder {
-  color: rgba(255, 255, 255, 0.50); /* Ajusta a cor do placeholder */
+  color: rgba(255, 255, 255, 0.5); /* Ajusta a cor do placeholder */
 }
 
 .input-box input:focus {
@@ -95,7 +96,7 @@ form {
 
 .input-box a {
   position: relative;
-  visibility: hidden; 
+  visibility: hidden;
   bottom: -3px;
   font-size: 12px;
 }
@@ -108,18 +109,17 @@ form {
 
 .input-box.cnpj label {
   font-family: "Roboto", sans-serif;
-  font-size: 13px; 
+  font-size: 13px;
   color: #000000;
   margin-bottom: 5px;
   font-weight: 400;
-  
 }
 
 .input-box.cnpj input {
   padding: 10px; /* Aumenta o padding para campos maiores */
-  background: rgba(50, 50, 50, 0.80);
-  border: 1px solid #FFF;
-  color: rgba(255, 255, 255, 0.80); /* Ajusta a cor do texto nos campos */
+  background: rgba(50, 50, 50, 0.8);
+  border: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.8); /* Ajusta a cor do texto nos campos */
   border: none;
   border-radius: 3px;
   font-size: 18px; /* Aumenta o tamanho da fonte */
@@ -127,7 +127,7 @@ form {
 }
 
 .input-box.cnpj input::placeholder {
-  color: rgba(255, 255, 255, 0.50); /* Ajusta a cor do placeholder */
+  color: rgba(255, 255, 255, 0.5); /* Ajusta a cor do placeholder */
 }
 
 .input-box.cnpj input:focus {
@@ -137,7 +137,7 @@ form {
 
 .input-box.cnpj a {
   position: relative;
-  visibility: hidden; 
+  visibility: hidden;
   bottom: -3px;
   font-size: 12px;
 }
@@ -151,32 +151,29 @@ form {
   width: 100%;
 }
 
-
-
 .continue-button button {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: #333;
   margin-bottom: 5px;
   font-weight: 400;
-  text-decoration: none; 
+  text-decoration: none;
 
-  background-color:rgba(50, 50, 50, 0.80);
-  color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(50, 50, 50, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   padding: 10px 40px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.4s ease;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .continue-button button:hover {
-  background-color:rgba(50, 50, 50, 0.949);
+  background-color: rgba(50, 50, 50, 0.949);
 }
 
 @media (max-width: 768px) {
-
   .input-group {
     grid-template-columns: 1fr; /* Uma coluna para telas menores */
   }
@@ -186,24 +183,24 @@ form {
   margin-bottom: 0px;
 }
 
-.input-box.error input{
+.input-box.error input {
   outline: 2px solid #ff3b25a3;
 }
 
-.input-box.error a{
+.input-box.error a {
   color: #ff3b25a3;
-  visibility: visible;  
+  visibility: visible;
 }
 
 .input-box.error-cnpj {
   margin-bottom: -15px;
 }
 
-.input-box.error-cnpj input{
+.input-box.error-cnpj input {
   outline: 2px solid #ff3b25a3;
 }
 
-.input-box.error-cnpj a{
+.input-box.error-cnpj a {
   color: #ff3b25a3;
 }
 
@@ -228,7 +225,6 @@ form {
 }
 
 dialog {
-  
   position: fixed;
   top: 50%;
   left: 50%;
@@ -247,20 +243,20 @@ dialog {
   color: #333;
   margin-bottom: 5px;
   font-weight: 400;
-  text-decoration: none; 
+  text-decoration: none;
 
-  background-color:rgba(50, 50, 50, 0.80);
-  color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(50, 50, 50, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   padding: 10px 40px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.4s ease;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .dialog_close:hover {
-  background-color:rgba(50, 50, 50, 0.949);
+  background-color: rgba(50, 50, 50, 0.949);
 }
 
 #dialog_enviado {
@@ -288,21 +284,19 @@ dialog {
   padding-top: 10px;
 }
 
-
 #cadastro {
   position: relative;
 }
 
 .overlay-enviado {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-display: none;
-align-items: center;
-justify-content: center;
-background: rgba(0, 0, 0, 0.6);
-z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9;
 }
-
