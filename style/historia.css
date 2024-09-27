@@ -82,15 +82,15 @@ body {
 
   .escrita {
     padding-left: 60px;
-}
+  }
 
-.box-cinza{
-   height: 25rem; 
-}
+  .box-cinza {
+    height: 25rem;
+  }
 
-.background-article .texto-article {
-  padding-left: 60px;
-}
+  .background-article .texto-article {
+    padding-left: 60px;
+  }
 }
 
 .texto-article {

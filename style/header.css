@@ -1,263 +1,260 @@
 :root {
-    --primary-color: #0a1128;
-    --white-color: #ffffff;
-    --gap: 3rem;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  --primary-color: #0a1128;
+  --white-color: #ffffff;
+  --gap: 3rem;
+}
 
-  .logo-nav{
-    width: 140px;
-    height: auto;
-  }
-  
-  header {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    transition: 0.3s;
-    width: 100%;
-    padding: 30px 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  header.rolagem {
-    background-color: white;
-    padding: 8px 3%;
-  }
-  
-  header.rolagem a,
-  header.rolagem .logo h1 a {
-    color: #000000;
-  }
-  
-  header.rolagem .mobile-menu-icon button {
-    padding: 0;
-    margin: 0;
-  }
-  
-  header.rolagem .nav-item :hover {
-    color: rgb(143, 143, 143);
-  }
-  
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 4rem;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .logo h1 a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    width: 192.732px;
-    height: 28px;
-    flex-shrink: 1;
-    color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 27.5px; /* 171.875% */
-    font-variant: all-small-caps;
-    letter-spacing: 3.36px;
-    margin-right: 5rem;
-  }
-  
-  .logo h1 {
-    text-decoration: none;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: medium;
-  }
-  
-  .nav-list {
-    display: flex;
-    align-items: space-between;
-  }
-  
-  .nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
-  
+.logo-nav {
+  width: 140px;
+  height: auto;
+}
+
+header {
+  transition: 0.3s;
+  width: 100%;
+  padding: 30px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header.rolagem {
+  background-color: white;
+  padding: 8px 3%;
+}
+
+header.rolagem a,
+header.rolagem .logo h1 a {
+  color: #000000;
+}
+
+header.rolagem .mobile-menu-icon button {
+  padding: 0;
+  margin: 0;
+}
+
+header.rolagem .nav-item :hover {
+  color: rgb(143, 143, 143);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.logo h1 a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 192.732px;
+  height: 28px;
+  flex-shrink: 1;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 27.5px; /* 171.875% */
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+  margin-right: 5rem;
+}
+
+.logo h1 {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: medium;
+}
+
+.nav-list {
+  display: flex;
+  align-items: space-between;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  display: block;
+  margin: 0 65px;
+  align-items: center;
+}
+
+.nav-item :hover {
+  color: rgba(255, 255, 255);
+}
+
+.nav-link {
+  display: inline-flex;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  width: 13rem;
+  height: 28px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  z-index: 10;
+  display: none;
+}
+
+@media screen and (max-width: 1596px) {
   .nav-item {
-    display: block;
-    margin: 0 65px;
-    align-items: center;
+    margin: 0 45px;
   }
-  
-  .nav-item :hover {
-    color: rgba(255, 255, 255);
+}
+
+@media screen and (max-width: 1380px) {
+  .nav-item {
+    margin: 0 35px;
   }
-  
-  .nav-link {
-    display: inline-flex;
-    cursor: pointer;
-    transition: color 0.2s ease;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    width: 13rem;
-    height: 28px;
-    flex-shrink: 0;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27.5px;
-    font-variant: all-small-caps;
-    letter-spacing: 3.36px;
+}
+
+@media screen and (max-width: 1279px) {
+  .nav-item {
+    margin: 0 25px;
   }
-  
+}
+
+@media screen and (max-width: 1218px) {
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      background-size: contain;
+    }
+  }
+
+  .nav-item {
+    display: none;
+  }
+
   .mobile-menu-icon {
-    display: none;
-  }
-  
-  .mobile-menu {
-    z-index: 10;
-    display: none;
-  }
-  
-  @media screen and (max-width: 1596px) {
-    .nav-item {
-      margin: 0 45px;
-    }
-  }
-  
-  @media screen and (max-width: 1380px) {
-    .nav-item {
-      margin: 0 35px;
-    }
-  }
-  
-  @media screen and (max-width: 1279px) {
-    .nav-item {
-      margin: 0 25px;
-    }
-  }
-  
-  @media screen and (max-width: 1218px) {
-    .nav-bar {
-      padding: 1.5rem 4rem;
-    }
-  
-    @media (max-width: 768px) {
-      body {
-        background-size: contain;
-      }
-    }
-  
-    .nav-item {
-      display: none;
-    }
-  
-    .mobile-menu-icon {
-      display: block;
-    }
-  
-    .mobile-menu-icon button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-    }
-  
-    .mobile-menu ul {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-bottom: 1rem;
-      background-color: #565353; /* Fundo preto */
-      width: max-content; /* Ajusta a largura para cobrir as palavras */
-      padding: 1rem; /* Ajusta o espaçamento interno */
-      border-radius: 0.5rem; /* Adiciona cantos arredondados */
-      margin-left: 4rem;
-    }
-  
-    .mobile-menu .nav-item {
-      display: block;
-      padding-top: 1.2rem;
-    }
-  
-    .open {
-      display: block;
-    }
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    color: var(--primary-color);
-    background-color: #f0f0f0; /* Adicione uma cor de fundo para melhor visualização */
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Roboto", sans-serif;
-  }
-  
-  h1 {
-    font-size: 6rem;
-  }
-  
-  h2 {
-    font-size: 5.5rem;
-  }
-  
-  h3 {
-    font-size: 5rem;
-  }
-  
-  h4 {
-    font-size: 4.5rem;
-  }
-  
-  h5 {
-    font-size: 4rem;
-  }
-  
-  h6 {
-    font-size: 3.5rem;
-  }
-  
-  .main-bg {
-    background-color: var(
-      --primary-color
-    ); /* Defina uma cor de fundo para visualizar melhor */
-    background-size: cover;
-    background-position: center center;
-    color: var(--white-color);
-  }
-  
-  .white-bg {
-    background: var(--white-color);
-    color: var(--primary-color); /* Garantir contraste de cor */
-  }
-  
-  .main-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: var(--gap);
-  }
-  
-
-  .text-content {
-    width: 200px;
-    height: 80px;
+    display: block;
   }
 
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #565353; /* Fundo preto */
+    width: max-content; /* Ajusta a largura para cobrir as palavras */
+    padding: 1rem; /* Ajusta o espaçamento interno */
+    border-radius: 0.5rem; /* Adiciona cantos arredondados */
+    margin-left: 4rem;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  background-color: #f0f0f0; /* Adicione uma cor de fundo para melhor visualização */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5.5rem;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+
+.main-bg {
+  background-color: var(
+    --primary-color
+  ); /* Defina uma cor de fundo para visualizar melhor */
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+
+.white-bg {
+  background: var(--white-color);
+  color: var(--primary-color); /* Garantir contraste de cor */
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+.text-content {
+  width: 200px;
+  height: 80px;
+}

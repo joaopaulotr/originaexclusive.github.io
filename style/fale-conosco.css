@@ -1,190 +1,117 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .background-article {
-    height: 40vh;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    color: white;
-    background-color: white;
-  }
-  
-  #titulos {
-    padding-top: 120px;
-  }
-  
-  .box-cinza {
-    position: relative;
-    background-color: #ebebeb;
-    width: 100%;
-    height: 23rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  .escrita {
-    padding-left: 100px;
-  }
-  
-  .titulo {
-    color: black;
-    font-size: 70px;
-    font-weight: 900;
-    height: auto;
-  }
-  
-  .subtitulo {
-    padding: 0;
-    padding-left: 5px;
-    color: rgba(0, 0, 0, 0.7);
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-variant: all-small-caps;
-    letter-spacing: 3.36px;
-  }
-  
-  .pagina-incial {
-    color: rgba(0, 0, 0, 0.5);
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-variant: all-small-caps;
-    letter-spacing: 3.36px;
-    text-decoration: none;
-    list-style: none;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.background-article {
+  height: 40vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: white;
+  background-color: white;
+}
+
+#titulos {
+  padding-top: 120px;
+}
+
+.box-cinza {
+  position: relative;
+  background-color: #ebebeb;
+  width: 100%;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.escrita {
+  padding-left: 100px;
+}
+
+.titulo {
+  color: black;
+  font-size: 70px;
+  font-weight: 900;
+  height: auto;
+}
+
+.subtitulo {
+  padding: 0;
+  padding-left: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+}
+
+.pagina-incial {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.hrefs-pg {
+  white-space: nowrap;
+  position: absolute;
+  right: 170px;
+  top: 110px;
+}
+
+/* Aqui está a media query para telas menores */
+@media (max-width: 950px) {
   .hrefs-pg {
-    white-space: nowrap;
-    position: absolute;
-    right: 170px;
-    top: 110px;
+    position: relative; /* Altera o position para relative */
+    right: 0; /* Remove a posição à direita */
+    top: 0; /* Remove a posição do topo */
+    margin-top: 15px;
+    padding-left: 5px;
   }
-  
-  /* Aqui está a media query para telas menores */
-  @media (max-width: 950px) {
-    .hrefs-pg {
-      position: relative; /* Altera o position para relative */
-      right: 0; /* Remove a posição à direita */
-      top: 0; /* Remove a posição do topo */
-      margin-top: 15px;
-      padding-left: 5px; 
-    }
-     
-  
-    .escrita {
-        padding-left: 55px;
-    }
 
-    .box-cinza{
-       height: 25rem; 
-    }
-    
-
-    #fale_conosco_sub {
-        padding-left: 15px;
-        padding-right: 15px;
-        color: rgba(0, 0, 0, 0.7);
-        text-align: center;
-        font-family: Roboto;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 27.5px; /* 114.583% */
-        font-variant: all-small-caps;
-        letter-spacing: 5.04px;
-        margin-top: 9rem;
-      }
-      
-      .sub_tel {
-        padding-left: 15px;
-        padding-right: 15px;
-        color: rgba(0, 0, 0, 0.7);
-        font-family: Roboto;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 27.5px; /* 171.875% */
-        font-variant: all-small-caps;
-        letter-spacing: 3.36px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 2.5rem;
-      }
-      
-      .sub_tel a {
-        
-        color: rgba(0, 0, 0, 0.7);
-        font-family: Roboto;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 27.5px;
-        font-variant: all-small-caps;
-        letter-spacing: 3.36px;
-        text-decoration-line: underline;
-      }
-      
-      #sub_desc {
-        padding-left: 15px;
-        padding-right: 15px;
-        color: rgba(0, 0, 0, 0.57);
-        text-align: center;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 27.5px; /* 137.5% */
-        margin-top: 3rem;
-      }
-    
-
+  .escrita {
+    padding-left: 55px;
   }
-  
-  .texto-article {
-    color: #000;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71875rem;
-    max-width: 1400px;
-    padding-top: 4.56rem;
-    padding-left: 100px;
-    color: black;
+
+  .box-cinza {
+    height: 25rem;
   }
-  
+
   #fale_conosco_sub {
+    padding-left: 15px;
+    padding-right: 15px;
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 27.5px;
+    line-height: 27.5px; /* 114.583% */
     font-variant: all-small-caps;
     letter-spacing: 5.04px;
     margin-top: 9rem;
   }
-  
+
   .sub_tel {
+    padding-left: 15px;
+    padding-right: 15px;
     color: rgba(0, 0, 0, 0.7);
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27.5px;
+    line-height: 27.5px; /* 171.875% */
     font-variant: all-small-caps;
     letter-spacing: 3.36px;
     text-align: center;
@@ -193,11 +120,11 @@
     gap: 15px;
     margin-top: 2.5rem;
   }
-  
+
   .sub_tel a {
     color: rgba(0, 0, 0, 0.7);
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 27.5px;
@@ -205,27 +132,96 @@
     letter-spacing: 3.36px;
     text-decoration-line: underline;
   }
-  
+
   #sub_desc {
+    padding-left: 15px;
+    padding-right: 15px;
     color: rgba(0, 0, 0, 0.57);
     text-align: center;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27.5px;
+    line-height: 27.5px; /* 137.5% */
     margin-top: 3rem;
-    margin-bottom: 90px;
   }
-  
-  /* Responsividade */
-  @media (max-width: 480px) {
-    .telefone {
-      text-align: left;
-    }
-  
-    .tel-label, .tel-number {
-      text-align: center;
-      display: block; /* Força cada parte do telefone em linhas diferentes */
-    }
+}
+
+.texto-article {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71875rem;
+  max-width: 1400px;
+  padding-top: 4.56rem;
+  padding-left: 100px;
+  color: black;
+}
+
+#fale_conosco_sub {
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27.5px;
+  font-variant: all-small-caps;
+  letter-spacing: 5.04px;
+  margin-top: 9rem;
+}
+
+.sub_tel {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 2.5rem;
+}
+
+.sub_tel a {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+  text-decoration-line: underline;
+}
+
+#sub_desc {
+  color: rgba(0, 0, 0, 0.57);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px;
+  margin-top: 3rem;
+  margin-bottom: 90px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .telefone {
+    text-align: left;
   }
+
+  .tel-label,
+  .tel-number {
+    text-align: center;
+    display: block; /* Força cada parte do telefone em linhas diferentes */
+  }
+}
