@@ -137,10 +137,12 @@ function validacaoEmail(email) {
       }
 
       /*
-      const cnpjExiste = await verificaJaExistente('cadastro_cliente', 'cc_cnpj', cnpj);
+      const cnpjExiste = await verificaJaExistente('cadastro_cliente', 'cc_cnpj', cnpj.value);
       if (cnpjExiste) {
         existeCNPJ(cnpj);
         erro++;
+      } else {
+        cnpj.parentNode.className = "input-box"
       }      
       */
 
@@ -159,6 +161,22 @@ function validacaoEmail(email) {
         LINKINSTAGRAM: linkInstagram.value.trim()
       };
 
+      /*
+      const criaCadastroCliente = `
+      INSERT INTO cadastro_cliente 
+      (cc_fantasia, cc_razao, cc_email, cc_telefone, cc_cnpj, cc_perfilinstagram, cc_criacao) 
+      VALUES (?, ?, ?, ?, ?, ?, current_timestamp);
+      `;
+
+      connection.query(criaCadastroCliente, [ fantasia.value, razao.value, email.value, telefone.value, cnpj.value, linkInstagram.value ], (err) => {
+        if (err) {
+          console.error('Erro ao executar o insert:', err.stack);
+          return;
+        }
+        console.log('Cadastro criado com sucesso');
+      });
+      */
+
       fantasia.value = "";
       razao.value = "";
       email.value = "";
@@ -168,22 +186,6 @@ function validacaoEmail(email) {
 
     document.querySelector('.overlay-enviado').style.display = 'flex';
     await createRow(payload);
-
-    /*
-    const criaCadastroCliente = `
-    INSERT INTO cadastro_cliente 
-    (cc_fantasia, cc_razao, cc_email, cc_telefone, cc_cnpj, cc_perfilinstagram, cc_criacao) 
-    VALUES (?, ?, ?, ?, ?, ?, current_timestamp);
-    `;
-
-    connection.query(criaCadastroCliente, [ fantasia, razao, email, telefone, cnpj, linkInstagram ], (err) => {
-      if (err) {
-        console.error('Erro ao executar o insert:', err.stack);
-        return;
-      }
-      console.log('Cadastro criado com sucesso');
-    });
-    */
 
     });
   }
@@ -203,6 +205,8 @@ function existeCNPJ(input) {
   formItem.className = "input-box error-cnpj"; 
 
   document.querySelector('.cnpj_existente').style.visibility = 'visible';
+
+  moveVisibleErrorToTop()
 }
 
 function errorCNPJ(input) {
@@ -210,12 +214,29 @@ function errorCNPJ(input) {
   formItem.className = "input-box error-cnpj"; 
 
   document.querySelector('.cnpj_incorreto').style.visibility = 'visible';
+
+  moveVisibleErrorToTop()
 }
 
 document.querySelector('.dialog_close').addEventListener('click', () => {
   document.querySelector('.overlay-enviado').style.display = 'none';
 });
 
+function moveVisibleErrorToTop() {
+  const container = document.querySelector('.input-box.error-cnpj');
+  if (!container) {
+    console.error('O elemento .input-box.cnpj não foi encontrado.');
+    return; // Sai da função se o container não existir
+  }
 
+  const cnpjIncorreto = container.querySelector('.cnpj_incorreto');
+  const cnpjExistente = container.querySelector('.cnpj_existente');
+
+  if (cnpjIncorreto.style.visibility === 'visible') {
+    container.insertBefore(cnpjIncorreto, cnpjExistente);
+  } else if (cnpjExistente.style.visibility === 'visible') {
+    container.insertBefore(cnpjExistente, cnpjIncorreto);
+  }
+}
 //--------------------------------------------------------LEO-----------------------------------------------------------------//
 
