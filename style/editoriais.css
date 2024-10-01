@@ -231,6 +231,7 @@ body {
   line-height: 2rem; /* Aumentado o line-height */
   font-variant: all-small-caps;
   letter-spacing: 0.21rem;
+  padding-top: 10px;
 }
 
 .num-colection .texto-sec {
@@ -242,6 +243,7 @@ body {
   line-height: 1.8rem; /* Aumentado o line-height */
   font-variant: all-small-caps;
   letter-spacing: 0.21rem;
+  
 }
 
 .data .texto-sec {
