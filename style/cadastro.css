@@ -257,9 +257,9 @@ form {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 125px;
-  width: 300px;
-  border-radius: 3px;
+  height: 175px;
+  width: 350px;
+  border-radius: 9px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.7);
   font-family: "Roboto", sans-serif;

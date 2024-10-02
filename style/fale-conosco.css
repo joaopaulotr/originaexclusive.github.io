@@ -119,6 +119,7 @@ body {
     justify-content: center;
     gap: 15px;
     margin-top: 2.5rem;
+    flex-wrap: wrap;
   }
 
   .sub_tel a {
@@ -224,4 +225,19 @@ body {
     text-align: center;
     display: block; /* Força cada parte do telefone em linhas diferentes */
   }
+}
+
+.sub_tel2{
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px;
+  font-variant: all-small-caps;
+  letter-spacing: 3.36px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }

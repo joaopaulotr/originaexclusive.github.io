@@ -26,42 +26,30 @@ A
 let tel = document.querySelector('#tel');
 tel.addEventListener('keypress', () => {
   let inputLength = tel.value.length;
-  let regex = /^[+][5][5]/;
 
   if (inputLength == 0) {
-    tel.value = '+' + tel.value;
+    tel.value = '(' + tel.value;
   }
 
-  if (tel.value == '+55') {
-    tel.value += ' (';
+  if (inputLength == 3) {
+    tel.value += ') ';
   }
 
   let espaco = tel.value.indexOf(' ');
 
-  if (espaco > 0) {
-    if (inputLength == espaco + 1 && regex.test(tel.value)) {
-      tel.value += '(';
-    }
+  if (inputLength == espaco + 5) {
+    tel.value += '-';
+  }
 
-    if (inputLength == espaco + 4 && regex.test(tel.value)) {
-      tel.value += ') ';
-    }
+  if (inputLength == espaco + 10) {
+    var str = tel.value.split('');
+    var i   = tel.value.indexOf('-');
+    var j   = tel.value.indexOf('-')+1;
 
-    if (inputLength == espaco + 10 && regex.test(tel.value)) {
-      tel.value += '-';
-    }
-
-    if (inputLength == espaco + 15 && regex.test(tel.value)) {
-      var str = tel.value.split('');
-      var i   = tel.value.indexOf('-');
-      var j   = tel.value.indexOf('-')+1;
-
-      var aux   = str[i];    
-      str[i]    = str[j];
-      str[j]    = aux;    
-      tel.value = str.join('');
-    }
-
+    var aux   = str[i];    
+    str[i]    = str[j];
+    str[j]    = aux;    
+    tel.value = str.join('');
   }
     
 })

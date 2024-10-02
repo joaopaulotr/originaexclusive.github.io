@@ -594,6 +594,7 @@ h6 {
   }
 }
 
+/* Estilos globais */
 * {
   margin: 0;
   padding: 0;
@@ -601,17 +602,19 @@ h6 {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
 }
 
 .team-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* Padrão para desktop */
+  grid-template-columns: 150px 150px 150px 150px; 
+  gap: 20px; /* Reduzido o espaçamento entre os cards */
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1000px; /* Largura máxima reduzida */
   margin: 0 auto;
+  justify-content: center;
 }
 
 .member-card {
@@ -619,8 +622,10 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 15px;
+  padding: 10px; /* Reduzido o padding interno */
   transition: transform 0.3s ease;
+  width: 150px; /* Tamanho máximo reduzido para o card */
+  height: 220px;
 }
 
 .member-card:hover {
@@ -631,20 +636,40 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  max-width: 250px;
-  margin-bottom: 15px;
+  max-width: 150px; /* Reduzido o tamanho máximo da imagem */
+  margin-bottom: 10px; /* Reduzido o espaçamento abaixo da imagem */
 }
 
 .member-card h3 {
-  font-size: 18px;
+  font-size: 16px; /* Fonte menor para o nome */
   margin-bottom: 5px;
   color: #333;
 }
 
 .member-card p {
-  font-size: 14px;
+  font-size: 12px; /* Fonte menor para o parágrafo */
   color: #666;
 }
+
+/* Para telas de tablet (2x2) */
+@media (max-width: 768px) {
+  .team-section {
+    grid-template-columns: repeat(2, 1fr); /* Dois em cima, dois embaixo */
+    grid-template-columns: 150px 150px;
+    justify-content: center; /* Centraliza horizontalmente */
+    place-items: center;
+  }
+}
+
+/* Para telas de celular (1x1) */
+@media (max-width: 480px) {
+  .team-section {
+    grid-template-columns: 1fr; /* Um por linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    place-items: center;
+  }
+}
+
 
 * {
   box-sizing: border-box;

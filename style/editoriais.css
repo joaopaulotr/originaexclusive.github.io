@@ -113,7 +113,6 @@ body {
 
 .gallery1 {
   padding-top: 7.5rem;
-  padding-left: 100px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -137,6 +136,9 @@ body {
   width: 250px;
   height: 250px;
   object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .botao_editoriais {
@@ -150,7 +152,8 @@ body {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin: 0 auto; /* Adicionado para centralizar horizontalmente */
+  margin: 0 auto; 
+  padding-bottom: 15px;
 }
 
 .linha {
@@ -160,13 +163,16 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.linha2 {
-  margin-left: 100px;
+.linha-2 {
   width: 80%;
   max-width: 128rem;
   border: none;
   height: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
 }
 
 .escrita-lateral .nome-colecao {
@@ -190,7 +196,9 @@ body {
   font-weight: 400;
   line-height: 2.2rem; /* Aumentado o line-height */
   padding-bottom: 1.8rem;
-  max-width: 690px;
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .escrita-lateral .data {
@@ -243,32 +251,25 @@ body {
   padding-top: 20px;
 }
 
-@media (max-width: 1440px) {
-  .escrita-lateral {
-    padding-left: 0rem;
-  }
-  .gallery2 {
-    display: none;
-  }
+
+
+
+.fundo-galeria2{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-@media (max-width: 800px) {
-  .gallery1 {
-    padding-left: 60px;
+@media (max-width: 1150px) {
+  .fundo-galeria2, .gallery-item {
+    
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding-bottom: 10px;
+    justify-content: center;
   }
-  .gallery2 {
-    padding-left: 60px;
-  }
-  .botao-ver-todos {
-    margin-left: 60px;
-  }
-  .linha2 {
-    margin-left: 60px;
-  }
-}
 
-@media (max-width: 615px) {
-  .botao-ver-todos {
-    width: 250px;
-  }
 }
