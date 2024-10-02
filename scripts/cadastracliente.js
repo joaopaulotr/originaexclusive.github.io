@@ -126,7 +126,8 @@ function validacaoEmail(email) {
         errorCNPJ(cnpj);
         erro++;
       } else {
-        cnpj.parentNode.className = "input-box"
+        cnpj.parentNode.className = "input-box cnpj"
+        document.querySelector('.cnpj_incorreto').style.visibility = 'hidden';
       }
 
       if (linkInstagram.value.length <= 0 || !(validaLinkInsta.test(linkInstagram.value))) {
@@ -142,7 +143,8 @@ function validacaoEmail(email) {
         existeCNPJ(cnpj);
         erro++;
       } else {
-        cnpj.parentNode.className = "input-box"
+        cnpj.parentNode.className = "input-box cnpj"
+        document.querySelector('.cnpj_incorreto').style.visibility = 'visible';
       }      
       */
 
