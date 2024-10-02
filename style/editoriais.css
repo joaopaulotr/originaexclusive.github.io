@@ -144,34 +144,15 @@ body {
   background-color: transparent;
 }
 
-.botao-ver-todos {
-  margin-left: 100px;
-  display: block;
+.escrita-lateral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: #ebebeb;
-  width: 516px;
-  height: 3rem;
-  color: rgba(0, 0, 0, 0.7);
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: all-small-caps;
-  letter-spacing: 0.315rem;
-  text-decoration: none;
-  line-height: 3rem;
-  border: 1px ridge rgba(0, 0, 0, 0.3);
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  flex-direction: column;
+  margin: 0 auto; /* Adicionado para centralizar horizontalmente */
 }
 
-.botao-ver-todos:hover {
-  background-color: #dcdcdc;
-  border-color: #666666;
-}
-.escrita-lateral {
-  padding-left: 6rem;
-  padding-right: 3rem;
-}
 .linha {
   width: 70px;
   border: none;
