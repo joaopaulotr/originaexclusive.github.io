@@ -257,7 +257,7 @@
             <div class="input-group">
               <div class="input-box cnpj">
                 <label for="CNPJ">*CNPJ:</label>
-                <input id="CNPJ" type="text" name="CNPJ" required />
+                <input id="CNPJ" type="text" name="CNPJ" required minlength="18" maxlength="18"/>
                 <a class="cnpj_incorreto">CNPJ inválido!</a>
                 <a class="cnpj_existente">CNPJ já cadastrado!</a>
               </div>
@@ -268,6 +268,7 @@
                   type="text"
                   name="razao-social"
                   required
+                  maxlength="50"
                 />
                 <a>Razão Social inválida!</a>
               </div>
@@ -278,6 +279,7 @@
                   type="text"
                   name="nome-fantasia"
                   required
+                  maxlength="50"
                 />
                 <a>Nome Fantasia Inválido!</a>
               </div>
@@ -289,6 +291,7 @@
                   name="tel"
                   placeholder="(  )"
                   required
+                  maxlength="15"
                 />
                 <a>Telefone inválido!</a>
               </div>
@@ -301,7 +304,7 @@
               </div>
               <div class="input-box">
                 <label for="email">*Email:</label>
-                <input id="email" type="email" name="email" required />
+                <input id="email" type="email" name="email" required/>
                 <a>E-mail inválido!</a>
               </div>
             </div>

@@ -80,9 +80,9 @@ function validacaoEmail(email) {
       let erro = 0;
 
       // Definições das RegExp e validação dos campos
+      const validaTelefone = /[(][0-9]{2}[)][ ][0-9]{4,5}[-][0-9]{4}/;
       const validaLetra = /[^a-zA-ZÀ-ÖØ-öø-ÿ\s]/;
       const validaCnpj = /[0-9]{2}[.][0-9]{3}[.][0-9]{3}[\/][0-9]{4}[-][0-9]{2}/;
-      const validaLinkInsta = /[w][w][w][.][i][n][s][t][a][g][r][a][m][.][c][o][m][\/][A-Za-z0-9]/;
 
       // Pega os dados do cliente
       let fantasia = document.querySelector('#nome-fantasia');
@@ -115,7 +115,7 @@ function validacaoEmail(email) {
         email.parentNode.className = "input-box"
       }
 
-      if (telefone.value.length <= 0) {
+      if ((telefone.value.length <= 0) || !(validaTelefone.test(telefone.value))) {
         errorInput(telefone);
         erro++;
       } else {
@@ -130,7 +130,7 @@ function validacaoEmail(email) {
         document.querySelector('.cnpj_incorreto').style.visibility = 'hidden';
       }
 
-      if (linkInstagram.value.length <= 0 || !(validaLinkInsta.test(linkInstagram.value))) {
+      if (linkInstagram.value.length <= 0) {
         errorInput(linkInstagram);
         erro++;
       } else {
