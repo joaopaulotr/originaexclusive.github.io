@@ -64,6 +64,12 @@ footer {
   padding-top: 0.2rem;
 }
 
+@media screen and (max-width: 426px) {
+  #footer_social_media .footer-link{
+    padding-top: 0.1rem;
+  }
+}
+
 #footer_social_media .footer-link i {
   font-size: 1.25rem;
 }
