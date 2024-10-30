@@ -1,43 +1,4 @@
 import sensivel from './sensivel.js';
-//import mysql    from 'mysql2';
-
-/*
-const connection = mysql.createConnection({
-  host: sensivel.host_sql,
-  port: sensivel.porta_sql,
-  user: sensivel.usuario_sql,
-  password: sensivel.senha_sql,
-  database: sensivel.banco_sql
-});
-
-connection.connect((err) => {
-  if (err) {
-    console.error('Erro ao conectar ao MySQL:', err.stack);
-    return;
-  }
-
-function verificaJaExistente(banco, campo, dado) {
-  const validaExistente = `
-    SELECT * FROM ${banco}
-    WHERE ${campo} = ?
-  `;
-
-  return new Promise((resolve, reject) => {
-    connection.query(validaExistente, [dado], (err, results) => {
-      if (err) {
-        console.error('Erro ao executar a consulta:', err.stack);
-        return reject(err);
-      }
-      if (results.length > 0) {
-        return resolve(true); 
-      }
-      resolve(false); 
-    });
-  });
-}
-
-*/
-
 
 function validacaoEmail(email) {
     const usuario = email.split("@");
@@ -137,16 +98,6 @@ function validacaoEmail(email) {
         linkInstagram.parentNode.className = "input-box"
       }
 
-      /*
-      const cnpjExiste = await verificaJaExistente('cadastro_cliente', 'cc_cnpj', cnpj.value);
-      if (cnpjExiste) {
-        existeCNPJ(cnpj);
-        erro++;
-      } else {
-        cnpj.parentNode.className = "input-box cnpj"
-        document.querySelector('.cnpj_incorreto').style.visibility = 'visible';
-      }      
-      */
 
       // Se houver erros, não prosseguir
       if (erro > 0) {
@@ -162,22 +113,6 @@ function validacaoEmail(email) {
         CNPJ: cnpj.value.trim(),
         LINKINSTAGRAM: linkInstagram.value.trim()
       };
-
-      /*
-      const criaCadastroCliente = `
-      INSERT INTO cadastro_cliente 
-      (cc_fantasia, cc_razao, cc_email, cc_telefone, cc_cnpj, cc_perfilinstagram, cc_criacao) 
-      VALUES (?, ?, ?, ?, ?, ?, current_timestamp);
-      `;
-
-      connection.query(criaCadastroCliente, [ fantasia.value, razao.value, email.value, telefone.value, cnpj.value, linkInstagram.value ], (err) => {
-        if (err) {
-          console.error('Erro ao executar o insert:', err.stack);
-          return;
-        }
-        console.log('Cadastro criado com sucesso');
-      });
-      */
 
       fantasia.value = "";
       razao.value = "";
